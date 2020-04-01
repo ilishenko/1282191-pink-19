@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип Пинк" width="75" height="22">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/75x22" alt="Логотип Пинк" width="75" height="22">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
@@ -27,11 +26,6 @@
               <a href="#">Html Academy</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__login" href="login.html">Войти</a>
-            </li>
-          </ul>
         </div>
       </nav>
     </header>
@@ -40,18 +34,14 @@
       <h1 class="visually-hidden">Пинк – приложение для телефона</h1>
       <section class="download">
         <h2 class="visually-hidden">Загрузка приложения</h2>
-        <div class="download__item-image">
-          <img class="download__item-hand" src="#" alt="Фотография руки">
-          <img class="download__item-tel" src="#" alt="Фотография телефона">
-          <p class="">Взгляните на жизнь иначе!</p>
-        </div>
+        <p class="">Взгляните на жизнь иначе!</p>
         <div class="download__item-download">
           <a class="download__item-button button" href="#">Скачать приложение</a>
-          <div class="item-download__icon">
-            <img class="item-download__icon--ios" href="#" alt="Иконка ios">
-            <img class="item-download__icon--android" href="#" alt="Иконка android">
-            <img class="item-download__icon--windows" href="#" alt="Иконка windows">
-          </div>
+          <ul class="item-download__icon">
+            <li class="item-download__icon--ios"><span class="visually-hidden">Иконка ios</span></li>
+            <li class="item-download__icon--android"><span class="visually-hidden"></span></li>
+            <li class="item-download__icon--windows"><span class="visually-hidden"></span></li>
+          </ul>
           <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
@@ -75,7 +65,6 @@
               <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="advantages__image" src="#" alt="Фотография телефона с установленным приложением">
         </div>
       </section>
 
@@ -90,9 +79,9 @@
             </li>
           </ul>
           <p class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">1</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
+            <button class="slider__toggle" type="button"><span class="visually-hidden">3</span></button>
           </p>
         </div>
       </section>
@@ -132,15 +121,15 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <p class="contacts__manifest">Остались вопросы? Свяжитесь с нами!</p>
-          <div class="contacts__item--tel">
+          <div class="contacts__item">
             <p class="contacts__name">Звоните:</p>
             <a class="contacts__item" href="tel:+7812555-66-66">+7 (812) 555-66-66</a>
           </div>
-          <div class="contacts__item--mail">
+          <div class="contacts__item">
             <p class="contacts__name">Пишите:</p>
             <a class="contacts__item" href="e-mail:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
-          <div class="contacts__item--address">
+          <div class="contacts__item">
             <p class="contacts__name">Приезжайте в гости:</p>
             <p class="contacts__item">ул. Большая конюшенная, 19/8</p>
           </div>
