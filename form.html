@@ -14,13 +14,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Фотографии</a>
+              <a href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Конкурс</a>
+              <a>Конкурс</a>
             </li>
             <li class="site-list__item">
               <a href="#">Html Academy</a>
@@ -29,7 +29,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main-form">
 
     </main>
 
@@ -49,5 +49,18 @@
         </div>
       </div>
     </footer>
+
+    <section class="failure-popup--good">
+      <h3 class="failure-popup__title">Ваша заявка отправлена</h3>
+      <p class="failure-popup__message">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+        В ближайшее время мы рассмотрим её и оповестим вас.</p>
+      <button class="failure-popup__button" type="button" name="button">Закрыть окно</button>
+    </section>
+
+    <section class="failure-popup--error">
+      <h3 class="failure-popup__title">Что-то пошло не так!</h3>
+      <p class="failure-popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="failure-popup__button" type="button" name="button">Ок</button>
+    </section>
   </body>
 </html>
