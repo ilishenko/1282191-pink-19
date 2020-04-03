@@ -34,18 +34,25 @@
         <form class="form__user user__list" action="index.html" method="post">
           <fieldset class="form__personal personal">
             <legend class="visually-hidden">Персональные данные</legend>
-            <label for="surname">Фамилия:</label>
-            <input class="personal__surname" type="text" id="surname" name="surname" placeholder="Укажите фамилию*">
 
-            <label for="name">Имя:</label>
-            <input class="personal__name" type="text" id="name" name="name" placeholder="Введите ваше имя*">
+            <p class="personal__wrapper">
+              <label for="surname">Фамилия:</label>
+              <input class="personal__surname" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
+            </p>
 
-            <label for="middle-name">Отчество:</label>
-            <input class="personal__middle-name" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+            <p class="personal__wrapper">
+              <label for="name">Имя:</label>
+              <input class="personal__name" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
+            </p>
+
+            <p class="personal__wrapper">
+              <label for="middle-name">Отчество:</label>
+              <input class="personal__middle-name" type="text" id="middle-name" name="middle-name" placeholder="Ну и отчество тоже">
+            </p>
           </fieldset>
 
           <fieldset class="form__progress progress">
-            <legend class="progress__legend">Ваши безбашенные достежения в путешествии</legend>
+            <legend class="progress__title">Ваши безбашенные достежения в путешествии</legend>
             <input class="progress__btn btn" type="checkbox" name="selfie-shark" id="selfie-shark" checked>
             <label class="progress__mark mark" for="selfie-shark">Сделал селфи с акулой</label>
 
@@ -66,6 +73,36 @@
 
             <input class="progress__btn btn" type="checkbox" name="smash" id="smash">
             <label class="progress__mark mark" for="smash">Разгромил отель</label>
+          </fieldset>
+
+          <fieldset class="form__user-contact user-contact">
+            <legend class="user-contact__title visually-hidden">Контакты пользователя</legend>
+            <p class="user-contact__wrapper">
+            <label for="tel">Номер телефона</label>
+            <input class="user-contact__tel" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
+            </p>
+
+            <p class="user-contact__wrapper">
+            <label for="email">Номер телефона</label>
+            <input class="user-contact__email" type="email" id="email" name="email" placeholder="Введите почту*" required>
+            </p>
+          </fieldset>
+
+          <fieldset class="form__app app">
+            <legend>С каким приложением путешествовали?</legend>
+            <input class="btn" type="radio" name="app" id="app-ios" checked>
+            <label class="app__ios" for="app-ios">Pink для iOS</label>
+
+            <input class="btn" type="radio" name="app" id="app-android">
+            <label class="app__android" for="app-android">Pink на Android</label>
+
+            <input class="btn" type="radio" name="app" id="app-windows">
+            <label class="app__windows" for="app-windows">Windows Phone</label>
+          </fieldset>
+
+          <fieldset class="form__post post">
+            <legend class="post__title">Опишите свои эмоции</legend>
+            <textarea name="name" rows="8" cols="80"></textarea>
           </fieldset>
         </form>
       </div>
@@ -102,7 +139,7 @@
     </section>
 
     <section class="failure-popup failure-popup--error">
-      <h3 class="failure-popup__title">Что-то пошло не так!</h3>
+      <h2 class="failure-popup__title">Что-то пошло не так!</h2>
       <p class="failure-popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
       <button class="failure-popup__button button" type="button" name="button">Ок</button>
     </section>
