@@ -30,75 +30,96 @@
       </nav>
     </header>
     <main class="main-photo">
-      <section class="main-photo__gallery">
-        <h2 class="visually-hidden">Фотогалерея</h2>
+      <section class="gallery">
+        <h1 class="gallery__title">Фотографии пользователей</h1>
 
         <p>Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
         </p>
 
-        <ul class="main-photo__gallery__comment">
-          <li class="main-photo__gallery__item">
-            <img src="https://via.placeholder.com/320x137">
-            <h3 class="main-photo__gallery__autor">Анна</h3>
-            <p class="main-photo__gallery__post">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <a class="gallery__foto" href="#"><img src="https://via.placeholder.com/320x137"></a>
+            <div class="gallery__time">
+              <h3 class="gallery__autor">Анна</h3>
+              <time datetime="2020-04-03T13:31">5 минут назад</time>
+            </div>
+            <p class="gallery__post">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
               трансляцию вперескопе, задавайте свои вопросы!</p>
-            <button class="main-photo__gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-            <p class="main-photo__gallery__count">Нравится:</p>
+            <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
+            <p class="gallery__count">Нравится:</p>
           </li>
 
-          <li class="main-photo__gallery__item">
-            <img src="https://via.placeholder.com/280x180">
-            <h3 class="main-photo__gallery__autor">Левон</h3>
-            <p class="main-photo__gallery__post">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <button class="main-photo__gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-            <p class="main-photo__gallery__count">Нравится:</p>
+          <li class="gallery__item">
+            <a class="gallery__foto" href="#"><img src="https://via.placeholder.com/280x180"></a>
+            <div class="gallery__time">
+              <h3 class="gallery__autor">Левон</h3>
+              <time datetime="2020-04-03T08:31">5 часов назад</time>
+            </div>
+            <p class="gallery__post">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
+            <p class="gallery__count">Нравится:</p>
           </li>
 
-          <li class="main-photo__gallery__item">
-            <img src="https://via.placeholder.com/280x180">
-            <h3 class="main-photo__gallery__autor">Антон</h3>
-            <p class="main-photo__gallery__post">Соседи будут рады!</p>
-            <button class="main-photo__gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-            <p class="main-photo__gallery__count">Нравится:</p>
+          <li class="gallery__item">
+            <a class="gallery__foto" href="#"><img src="https://via.placeholder.com/280x180"></a>
+            <div class="gallery__time">
+              <h3 class="gallery__autor">Антон</h3>
+              <time datetime="2020-04-03T01:31">12 часов назад</time>
+            </div>
+            <p class="gallery__post">Соседи будут рады!</p>
+            <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
+            <p class="gallery__count">Нравится:</p>
           </li>
 
-          <li class="main-photo__gallery__item">
-            <img src="https://via.placeholder.com/280x180">
-            <h3 class="main-photo__gallery__autor">Борис</h3>
-            <p class="main-photo__gallery__post">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <button class="main-photo__gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-            <p class="main-photo__gallery__count">Нравится:</p>
+          <li class="gallery__item">
+            <a class="gallery__foto" href="#"><img src="https://via.placeholder.com/280x180"></a>
+            <div class="gallery__time">
+              <h3 class="gallery__autor">Борис</h3>
+              <time datetime="2020-04-02T17:31">20 часов назад</time>
+            </div>
+            <p class="gallery__post">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
+            <p class="gallery__count">Нравится:</p>
           </li>
 
-          <li class="main-photo__gallery__item">
-            <img src="https://via.placeholder.com/280x180">
-            <h3 class="main-photo__gallery__autor">Сергей</h3>
-            <p class="main-photo__gallery__post">Самая кубанская в мире!</p>
-            <button class="main-photo__gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-            <p class="main-photo__gallery__count">Нравится:</p>
+          <li class="gallery__item">
+            <a class="gallery__foto" href="#"><img src="https://via.placeholder.com/280x180"></a>
+            <div class="gallery__time">
+              <h3 class="gallery__autor">Сергей</h3>
+              <time datetime="2020-04-02T12:31">25 часов назад</time>
+            </div>
+            <p class="gallery__post">Самая кубанская в мире!</p>
+            <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
+            <p class="gallery__count">Нравится:</p>
           </li>
 
-          <li class="main-photo__gallery__item">
-            <img src="https://via.placeholder.com/280x180">
-            <h3 class="main-photo__gallery__autor">Максим</h3>
-            <p class="main-photo__gallery__post">Где снег-то?</p>
-            <button class="main-photo__gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-            <p class="main-photo__gallery__count">Нравится:</p>
+          <li class="gallery__item">
+            <a class="gallery__foto" href="#"><img src="https://via.placeholder.com/280x180"></a>
+            <div class="gallery__time">
+              <h3 class="gallery__autor">Максим</h3>
+              <time datetime="2020-04-01T21:31">40 часов назад</time>
+            </div>
+            <p class="gallery__post">Где снег-то?</p>
+            <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
+            <p class="gallery__count">Нравится:</p>
           </li>
 
-          <li class="main-photo__gallery__item">
-            <img src="https://via.placeholder.com/280x180">
-            <h3 class="main-photo__gallery__autor">Надежда</h3>
-            <p class="main-photo__gallery__post">Всем GM и взаимные лайки!</p>
-            <button class="main-photo__gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-            <p class="main-photo__gallery__count">Нравится:</p>
+          <li class="gallery__item">
+            <a class="gallery__foto" href="#"><img src="https://via.placeholder.com/280x180"></a>
+            <div class="gallery__time">
+              <h3 class="gallery__autor">Надежда</h3>
+              <time datetime="2020-04-01T16:31">45 часов назад</time>
+            </div>
+            <p class="gallery__post">Всем GM и взаимные лайки!</p>
+            <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
+            <p class="gallery__count">Нравится:</p>
           </li>
         </ul>
 
       </section>
 
-      <section  class="main-photo__new-post">
+      <section  class="new-post">
         <h2 class="visually-hidden">Новый пост!</h2>
       </section>
 
@@ -109,14 +130,20 @@
         <a class="page-footer__logo">
           <!-- Логотип -->
         </a>
-        <ul class="page-footer__social">
-          <li class="page-footer__social-twitter"></li>
-          <li class="page-footer__social-facebook"></li>
-          <li class="page-footer__social-youtube"></li>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Фейсбук</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб</span></a>
+          </li>
         </ul>
-        <div class="page-footer__autor">
-          <p class="page-footer__paragraf">Разработано</p>
-          <a class="page-footer__logo" href="#"></a>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__paragraf">Разработано</p>
+          <a class="copyright__logo" href="#"></a>
         </div>
       </div>
     </footer>
