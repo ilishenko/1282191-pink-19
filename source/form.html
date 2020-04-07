@@ -17,7 +17,7 @@
           </g>
         </svg>
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -38,8 +38,8 @@
       </nav>
     </header>
     <main class="main-form">
-      <div class="form__wrapper">
-        <p class="form__histori">Подититесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!<span class="visually-hidden">Пожалуйста, заполните форму ниже:</span>
+        <p class="form__tender"> Конкурс на самое безбашенное путешествие с Пинк</p>
+        <p class="form__histori">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!<span class="visually-hidden">Пожалуйста, заполните форму ниже:</span>
         </p>
         <form class="form__user user__list" action="index.html" method="post">
           <fieldset class="form__personal personal">
@@ -62,30 +62,30 @@
           </fieldset>
 
           <fieldset class="form__progress progress">
-            <legend class="progress__title">Ваши безбашенные достежения в путешествии</legend>
+            <p class="progress__title">Ваши безбашенные<br> достежения в путешествии</p>
 
             <p class="progress__wrapper">
-              <input class="progress__btn btn" type="checkbox" name="selfie-shark" id="selfie-shark" checked>
+              <input class="progress__btn btn-1" type="checkbox" name="selfie-shark" id="selfie-shark" checked>
               <label class="progress__mark mark" for="selfie-shark">Сделал селфи с акулой</label>
             </p>
 
             <p class="progress__wrapper">
-              <input class="progress__btn btn" type="checkbox" name="burn-beach" id="burn-beach" checked>
+              <input class="progress__btn btn-2" type="checkbox" name="burn-beach" id="burn-beach" checked>
               <label class="progress__mark mark" for="burn-beach">Обгорел на пляже</label>
             </p>
 
             <p class="progress__wrapper">
-              <input class="progress__btn btn" type="checkbox" name="see-chack" id="see-chack">
+              <input class="progress__btn btn-3" type="checkbox" name="see-chack" id="see-chack">
               <label class="progress__mark mark" for="see-chack">Видел Чака Норриса</label>
             </p>
 
             <p class="progress__wrapper">
-              <input class="progress__btn btn" type="checkbox" name="souvenir" id="souvenir">
+              <input class="progress__btn btn-4" type="checkbox" name="souvenir" id="souvenir">
               <label class="progress__mark mark" for="souvenir">Накупил сувениров</label>
             </p>
 
             <p class="progress__wrapper">
-              <input class="progress__btn btn" type="checkbox" name="tower" id="tower" checked>
+              <input class="progress__btn btn-5" type="checkbox" name="tower" id="tower" checked>
               <label class="progress__mark mark" for="tower">Удержал башню</label>
             </p>
 
@@ -94,10 +94,6 @@
               <label class="progress__mark mark" for="smash">Разгромил отель</label>
             </p>
 
-            <p class="progress__wrapper">
-              <input class="progress__btn btn" type="checkbox" name="smash" id="smash">
-              <label class="progress__mark mark" for="smash">Разгромил отель</label>
-            </p>
           </fieldset>
 
           <fieldset class="form__user-contact user-contact">
@@ -136,7 +132,6 @@
             <textarea name="name" rows="8" cols="30"></textarea>
           </fieldset>
         </form>
-      </div>
     </main>
 
     <footer class="page-footer">
