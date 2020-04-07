@@ -1,15 +1,18 @@
+
 .download {
   background-color: #1d2631;
+  margin-top: -70px;
+
   &__access {
     background-color: #1d2631;
     margin: 0;
     padding-top: 20px;
     padding-bottom: 29px;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
-    color: @white;
+    color: #ffffff;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;
@@ -18,15 +21,15 @@
 
 .download__paragraf {
   margin-top: -1px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   width: 280px;
   min-height: 367px;
   padding-top: 95px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
-  color: @white;
-  font-family: "Open Sans", Arial, sans-serif;
+  color: #ffffff;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
@@ -34,58 +37,61 @@
   background-position: 0% 100%, 50% 50%;
 }
 
-.download__download {
-  background-color: #1d2631;
-  margin: 0;
-  text-align: center;
-  padding-top: 28px;
-  padding-bottom: 30px;
-}
-
 .button {
   display: block;
   box-sizing: border-box;
   margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 33px;
+  padding-bottom: 2px;
   width: 280px;
   text-decoration: none;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
   vertical-align: middle;
-  color: @white;
-  padding-left: 38px;
-  padding-right: 38px;
+  color: #ffffff;
   line-height: 48px;
   border: 2px solid #ffffff;
   border-radius: 24px;
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: #f1becc;
+  }
 }
 
 .icon-list {
   .reset_ul();
   background-color: #1d2631;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 232px;
+  margin: 0 auto;
 }
 
-.download__icon--ios {
+.icon-list--ios {
   width: 47px;
   height: 56px;
-  margin-left: 59px;
   background: url("../img/logo-apple.svg") no-repeat 50% 50%;
 }
 
-.download__icon--android {
+.icon-list--android {
   width: 47px;
   height: 56px;
-  margin-left: 31px;
   margin-top: 3px;
   background: url("../img/logo-android.svg") no-repeat 50% 50%;
 }
 
-.download__icon--windows {
+.icon-list--windows {
   width: 47px;
   height: 56px;
-  margin-left: 32px;
   margin-top: 4px;
   background: url("../img/logo-microsoft.svg") no-repeat 50% 50%;
 }
