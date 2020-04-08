@@ -2,9 +2,7 @@
 .advantages {
   padding-top: 43px;
   padding-bottom: 285px;
-  background-image: url("../img/iphone-screen-mobile@1x.png"), linear-gradient(174deg, #ffffff, #ffffff 24%, #f2f2f2 24%, #f2f2f2);
-  background-repeat: no-repeat;
-  background-position: 50% 106%;
+  background-image: linear-gradient(174deg, #ffffff, #ffffff 24%, #f2f2f2 24%, #f2f2f2);
 
   &__paragraf {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -27,6 +25,22 @@
 
   &__item {
     margin-bottom: 32px;
+  }
+
+  &__item:last-child {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 124px;
+      left: 62px;
+      width: 157px;
+      height: 300px;
+      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: 50% -105%;
+    }
   }
 
   &__title {

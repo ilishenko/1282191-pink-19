@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-weight: light;
+  font-weight: 300;
   font-family: "Open Sans";
   font-style: normal;
   font-display: swap;
@@ -42,6 +42,18 @@ body {
 .page-main {
   width: 320px;
   margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .page-main {
+    width: 660px;
+  }
+}
+
+@media (min-width: 960px) {
+  .page-main {
+    width: 1200px;
+  }
 }
 
 .form__wrapper {
