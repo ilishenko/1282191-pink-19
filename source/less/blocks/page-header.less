@@ -32,7 +32,7 @@
 .page-header__logo {
   width: 320px;
   display: block;
-  min-height: 69px;
+  min-height: 63px;
   vertical-align: middle;
   border-bottom: 1px solid #000000;
 }
@@ -79,7 +79,7 @@
 
   &:hover,
   &:active {
-    background-color: #283645;
+    background-color: transparent;
   }
 }
 
@@ -90,19 +90,21 @@
   left: 5px;
   width: 50px;
   height: 4px;
+  outline: none;
   background-color: #ffffff;
   box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
 }
 
-.main-nav--closed .main-nav__toggle:hover::before {
+.main-nav--closed .main-nav__toggle:hover::before,
+.main-nav--closed .main-nav__toggle:focus::before {
   background-color: #d22856;
   box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
   opacity: 0.3;
-  //background-color: rgba(255, 255, 255, 0.3);
-  //box-shadow: 0 10px 0 0 rgba(255, 255, 255, 0.3), 0 20px 0 0 rgba(255, 255, 255, 0.3);
+  //background-color: fade(#d22856, 0.3);
+  //box-shadow: 0 10px 0 0 fade(#d22856, 0.3), 0 20px 0 0 fade(#d22856, 0.3);
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -126,7 +128,9 @@
   }
 
   &:hover::before,
-  &:hover::after {
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
     background-color: #d22856;
   }
 

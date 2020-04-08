@@ -3,14 +3,26 @@
   background-color: #1d2631;
   margin-top: -70px;
 
+  @media (min-width: 660px) {
+    .download {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #ffffff;
+    //  background-image: url("../img/bg-back-tablet@1x.jpg");
+    //  background-repeat: no-repeat;
+    //  background-position: 50% 50%;
+    }
+  }
+
   &__access {
     background-color: #1d2631;
     margin: 0;
-    padding-top: 20px;
+    padding-top: 18px;
     padding-bottom: 29px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px;
     color: #ffffff;
     padding-left: 20px;
@@ -23,18 +35,24 @@
   margin-top: -1px;
   margin-bottom: 0;
   width: 280px;
-  min-height: 367px;
+  min-height: 371px;
   padding-top: 95px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
   color: #ffffff;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 0% 100%, 50% 50%;
+}
+
+@media (min-width: 660px) {
+  .download__paragraf {
+    background-image: none;
+  }
 }
 
 .button {
@@ -73,6 +91,15 @@
   flex-wrap: wrap;
   width: 232px;
   margin: 0 auto;
+  margin-left: 56px;
+
+  &__item {
+    margin-right: 32px;
+
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+  }
 }
 
 .icon-list--ios {

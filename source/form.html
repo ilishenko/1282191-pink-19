@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Пинк, главная страница</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="page-header">
@@ -39,7 +40,7 @@
         <p class="form__histori">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!<span class="visually-hidden">Пожалуйста, заполните форму ниже:</span>
         </p>
         <form class="form__user user__list" action="index.html" method="post">
-          <fieldset class="form__personal personal">
+          <fieldset class="form__personal">
             <legend class="visually-hidden">Персональные данные</legend>
 
             <p class="personal__wrapper">
@@ -93,7 +94,7 @@
 
           </fieldset>
 
-          <fieldset class="form__user-contact user-contact">
+          <fieldset class="form__user-contact">
             <legend class="user-contact__title visually-hidden">Контакты пользователя</legend>
             <p class="user-contact__wrapper">
               <label for="tel">Номер телефона</label>
@@ -106,7 +107,7 @@
             </p>
           </fieldset>
 
-          <fieldset class="form__app app">
+          <fieldset class="form__app">
             <legend>С каким приложением путешествовали?</legend>
             <p class="app__wrapper">
               <input class="btn" type="radio" name="app" id="app-ios" checked>
@@ -124,10 +125,10 @@
             </p>
           </fieldset>
 
-          <fieldset class="form__post post">
+          <p class="form__post">
             <legend class="post__title">Опишите свои эмоции</legend>
             <textarea name="name" rows="8" cols="30"></textarea>
-          </fieldset>
+          </p>
         </form>
     </main>
 
