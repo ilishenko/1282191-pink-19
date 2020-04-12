@@ -37,7 +37,7 @@
     </header>
     <main class="main-form">
       <p class="form__tender"> Конкурс на самое безбашенное путешествие с Пинк</p>
-      <p class="form__histori">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!<span class="visually-hidden">Пожалуйста, заполните форму ниже:</span>
+      <p class="form__histori">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!<span class="form__histori__write">Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="form__user user__list" action="index.html" method="post">
         <fieldset class="form__personal">
@@ -59,42 +59,44 @@
           </p>
         </fieldset>
 
-        <fieldset class="form__progress">
-          <p class="progress__title">Ваши безбашенные<br> достежения в путешествии</p>
+        <div class="form__progress__wrapper">
+          <fieldset class="form__progress">
+            <legend class="progress__title">Ваши безбашенные<br> достежения в путешествии</legend>
 
-          <p class="progress__wrapper">
-            <input class="progress__btn visually-hidden" type="checkbox" name="selfie-shark" id="selfie-shark" checked>
-            <label class="progress__mark" for="selfie-shark">Сделал селфи с акулой</label>
-          </p>
+            <p class="progress__wrapper">
+              <input class="progress__btn visually-hidden" type="checkbox" name="selfie-shark" id="selfie-shark" checked>
+              <label class="progress__mark" for="selfie-shark">Сделал селфи с акулой</label>
+            </p>
 
-          <p class="progress__wrapper">
-            <input class="progress__btn visually-hidden" type="checkbox" name="burn-beach" id="burn-beach" checked>
-            <label class="progress__mark" for="burn-beach">Обгорел на пляже</label>
-          </p>
+            <p class="progress__wrapper">
+              <input class="progress__btn visually-hidden" type="checkbox" name="burn-beach" id="burn-beach" checked>
+              <label class="progress__mark" for="burn-beach">Обгорел на пляже</label>
+            </p>
 
-          <p class="progress__wrapper">
-            <input class="progress__btn visually-hidden" type="checkbox" name="see-chack" id="see-chack">
-            <label class="progress__mark" for="see-chack">Видел Чака Норриса</label>
-          </p>
+            <p class="progress__wrapper">
+              <input class="progress__btn visually-hidden" type="checkbox" name="see-chack" id="see-chack">
+              <label class="progress__mark" for="see-chack">Видел Чака Норриса</label>
+            </p>
 
-          <p class="progress__wrapper">
-            <input class="progress__btn visually-hidden" type="checkbox" name="souvenir" id="souvenir">
-            <label class="progress__mark" for="souvenir">Накупил сувениров</label>
-          </p>
+            <p class="progress__wrapper">
+              <input class="progress__btn visually-hidden" type="checkbox" name="souvenir" id="souvenir">
+              <label class="progress__mark" for="souvenir">Накупил сувениров</label>
+            </p>
 
-          <p class="progress__wrapper">
-            <input class="progress__btn visually-hidden" type="checkbox" name="tower" id="tower" checked>
-            <label class="progress__mark" for="tower">Удержал башню</label>
-          </p>
+            <p class="progress__wrapper">
+              <input class="progress__btn visually-hidden" type="checkbox" name="tower" id="tower" checked>
+              <label class="progress__mark" for="tower">Удержал башню</label>
+            </p>
 
-          <p class="progress__wrapper">
-            <input class="progress__btn visually-hidden" type="checkbox" name="smash" id="smash">
-            <label class="progress__mark" for="smash">Разгромил отель</label>
-          </p>
-        </fieldset>
+            <p class="progress__wrapper">
+              <input class="progress__btn visually-hidden" type="checkbox" name="smash" id="smash">
+              <label class="progress__mark" for="smash">Разгромил отель</label>
+            </p>
+          </fieldset>
+        </div>
 
         <fieldset class="form__user-contact">
-          <legend class="user-contact__title visually-hidden">Контакты пользователя</legend>
+          <legend class="user-contact__title">Контактная информация</legend>
           <p class="user-contact__wrapper">
             <label for="tel">Номер телефона</label>
             <input class="user-contact__input" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
@@ -108,26 +110,28 @@
 
         <div class="form__app__wrapper">
           <fieldset class="form__app">
-              <legend>С каким приложением путешествовали?</legend>
-              <p class="app__wrapper">
-                <input class="app__btn visually-hidden" type="radio" name="app" id="app-ios" checked>
-                <label class="app__mark" for="app-ios">Pink для iOS</label>
-              </p>
+            <legend>С каким приложением путешествовали?</legend>
+            <p class="app__wrapper">
+              <input class="app__btn visually-hidden" type="radio" name="app" id="app-ios" checked>
+              <label class="app__mark" for="app-ios">Pink для iOS</label>
+            </p>
 
-              <p class="app__wrapper">
-                <input class="app__btn visually-hidden" type="radio" name="app" id="app-android">
-                <label class="app__mark" for="app-android">Pink на Android</label>
-              </p>
+            <p class="app__wrapper">
+              <input class="app__btn visually-hidden" type="radio" name="app" id="app-android">
+              <label class="app__mark" for="app-android">Pink на Android</label>
+            </p>
 
-              <p class="app__wrapper">
-                <input class="app__btn visually-hidden" type="radio" name="app" id="app-windows">
-                <label class="app__mark" for="app-windows">Windows Phone</label>
-              </p>
-            </fieldset>
+            <p class="app__wrapper">
+              <input class="app__btn visually-hidden" type="radio" name="app" id="app-windows">
+              <label class="app__mark" for="app-windows">Windows Phone</label>
+            </p>
+          </fieldset>
         </div>
 
-        <p class="post__title">Опишите свои эмоции</p>
-        <textarea class="post__textarea" name="name" rows="6" cols="26">Можно прям в красках, не стесняясь в выражениях</textarea>
+        <fieldset class="post">
+          <legend class="post__title">Опишите свои эмоции</legend>
+          <textarea class="post__textarea" name="name" rows="6" cols="26">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </fieldset>
 
         <input class="form__button" type="submit" value="Отправить форму">
         <p class="form__required"><span>*</span> &#8212; Обязательные поля</p>

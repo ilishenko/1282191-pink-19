@@ -22,6 +22,22 @@
   background-size: 844px auto;
 }
 
+@media (min-width: 660px) {
+  .main-form {
+    margin-top: -110px;
+  }
+
+  .form__tender {
+    width: 660px;
+    height: 439px;
+    padding-top: 181px;
+    background-size: 1200px auto;
+    background-position: -269px 0;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
 .form__histori {
   width: 280px;
   margin: 0 auto;
@@ -34,6 +50,22 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  &__write {
+    display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .form__histori {
+    width: 500px;
+    padding-top: 94px;
+    font-size: 18px;
+
+    &__write {
+      display: block;
+    }
+  }
 }
 
 .form__button {
@@ -70,6 +102,12 @@
   }
 }
 
+@media (min-width: 660px) {
+  .form__button {
+    order: 6;
+  }
+}
+
 .form__required {
   margin-top: 35px;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -82,5 +120,11 @@
 
   & span {
     color: #d22856;
+  }
+}
+
+@media (min-width: 660px) {
+  .form__required {
+    order: 7;
   }
 }
