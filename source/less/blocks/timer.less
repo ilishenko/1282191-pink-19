@@ -1,0 +1,65 @@
+.timer {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .timer {
+    display: block;
+    position: relative;
+    width: 310px;
+    margin-top: 95px;
+    padding-left: 328px;
+    margin-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -37px;
+      left: 20px;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-size: 202px 202px, 238px 276px;
+      background-position: 50% 74%, 50% 50%;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      color: #d22856;
+      font-size: 96px;
+      font-weight: bold;
+      padding-top: 96px;
+      padding-left: 63px;
+      top: -37px;
+      left: 20px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 0;
+    }
+
+    &__paragraf {
+      margin-top: 9px;
+      margin-bottom: 0;
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: #283645;
+    }
+
+    &__know {
+      display: block;
+      margin-top: 11px;
+      font-family: "Open Sans", "Arial", sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      color: #d22856;
+    }
+  }
+}

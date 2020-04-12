@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper container">
         <a class="page-header__logo">
           <picture>
           <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
@@ -40,19 +40,19 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Пинк – приложение для телефона</h1>
-      <div class="download-container">
-        <section class="download">
-        <h2 class="visually-hidden">Загрузка приложения</h2>
-        <p class="download__paragraf">Взгляните на жизнь иначе!</p>
-        <a class="download__button button" href="#">Скачать приложение</a>
-        <ul class="download__icon icon-list">
-          <li class="icon-list__item icon-list--ios"><a href="#"><span class="visually-hidden">Иконка ios</span></a></li>
-          <li class="icon-list__item icon-list--android"><a href="#"><span class="visually-hidden">Иконка Android</span></a></li>
-          <li class="icon-list__item icon-list--windows"><a href="#"><span class="visually-hidden">Иконка Windows</span></a></li>
-        </ul>
-        <p class="download__access">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <section class="download">
+        <div class="download__wrapper container">
+          <h2 class="visually-hidden">Загрузка приложения</h2>
+          <p class="download__paragraf">Взгляните на жизнь иначе!</p>
+          <a class="download__button button" href="#">Скачать приложение</a>
+          <ul class="download__icon icon-list">
+            <li class="icon-list__item icon-list--ios"><a href="#"><span class="visually-hidden">Иконка ios</span></a></li>
+            <li class="icon-list__item icon-list--android"><a href="#"><span class="visually-hidden">Иконка Android</span></a></li>
+            <li class="icon-list__item icon-list--windows"><a href="#"><span class="visually-hidden">Иконка Windows</span></a></li>
+          </ul>
+          <p class="download__access">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
-      </div>
 
       <section class="advantages">
         <div class="advantages__wrapper">
@@ -74,11 +74,12 @@
             </li>
           </ul>
         </div>
-        <div class="advantages__timer">
-          <h3 class="advantages__timer__title">Эффект<br> на 24 часа!</h3>
-          <p class="advantages__timer__paragraf">Британские учёные провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
-          <a class="advantages__timer__know" href="#">Узнать больше об исследовании</a>
-        </div>
+      </section>
+
+      <section class="timer">
+        <h3 class="timer__title">Эффект<br> на 24 часа!</h3>
+        <p class="timer__paragraf">Британские учёные провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
+        <a class="timer__know" href="#">Узнать больше об исследовании</a>
       </section>
 
       <section class="reviews">

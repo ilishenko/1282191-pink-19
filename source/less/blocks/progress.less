@@ -6,7 +6,6 @@
 }
 
 .progress {
-
   &__title {
     display: block;
     margin: 0;
@@ -24,6 +23,10 @@
   &__wrapper {
     padding-left: 89px;
     margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 46px;
+    }
   }
 
   &__mark {
@@ -45,7 +48,8 @@
       border: 2px solid #e5e5e5;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       border: 2px solid #283645;
     }
 
@@ -55,15 +59,15 @@
   }
 }
 
-.progress__btn:checked+.progress__mark[for="selfie-shark"]::after,
-.progress__btn:checked+.progress__mark[for="burn-beach"]::after,
-.progress__btn:checked+.progress__mark[for="see-chack"]::after,
-.progress__btn:checked+.progress__mark[for="souvenir"]::after,
-.progress__btn:checked+.progress__mark[for="tower"]::after,
-.progress__btn:checked+.progress__mark[for="smash"]::after {
+.progress__btn:checked + .progress__mark[for="selfie-shark"]::after,
+.progress__btn:checked + .progress__mark[for="burn-beach"]::after,
+.progress__btn:checked + .progress__mark[for="see-chack"]::after,
+.progress__btn:checked + .progress__mark[for="souvenir"]::after,
+.progress__btn:checked + .progress__mark[for="tower"]::after,
+.progress__btn:checked + .progress__mark[for="smash"]::after {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -62px;
   width: 20px;
   height: 8px;
