@@ -1,8 +1,12 @@
+.container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+}
+
 @media (min-width: 660px) {
   .container {
     width: 660px;
-    margin: 0 auto;
-    box-sizing: border-box;
   }
 }
 
@@ -15,12 +19,15 @@
 .download {
   background-color: #1d2631;
   margin-top: -70px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 42% 40%, 50% 1%;
 
   &__access {
     background-color: #1d2631;
     margin: 0;
     padding-top: 18px;
-    padding-bottom: 29px;
+    padding-bottom: 30px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -34,7 +41,6 @@
 
 @media (min-width: 660px) {
   .download {
-    width: 660px;
     min-height: 727px;
     margin-top: -108px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
@@ -64,20 +70,15 @@
 
 .download__paragraf {
   margin-top: -1px;
-  margin-bottom: 0;
+  margin-bottom: 346px;
   width: 280px;
-  min-height: 371px;
   padding-top: 95px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
   color: #ffffff;
   font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
   font-size: 24px;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0% 100%, 50% 50%;
 }
 
 @media (min-width: 660px) {
