@@ -1,45 +1,32 @@
 
-
 .page-header {
-  margin: 0;
+  position: relative;
   background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
   font-size: 14px;
   line-height: 32px;
-  font-family: "Open Sans", "Arial", sans-serif;
 }
 
 .page-header__wrapper {
-  position: relative;
-  width: 320px;
-}
-
-@media (min-width: 660px) {
-  .page-header__wrapper {
-    width: 660px;
-    margin: 0 auto;
-  }
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 @media (min-width: 960px) {
   .page-header__wrapper {
     width: 960px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
 }
 
-.page-header__color--menu {
+.page-header--color-menu {
   background-color: #283645;
 }
 
 .page-header__logo {
-  width: 320px;
   display: block;
   min-height: 63px;
-  vertical-align: middle;
-  border-bottom: 1px solid #000000;
 }
 
 @media (min-width: 660px) {
