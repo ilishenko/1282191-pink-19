@@ -2,12 +2,12 @@
 .advantages {
   padding-top: 43px;
   padding-bottom: 285px;
-  background-color: #ffffff;
+  background-image: linear-gradient(174deg, #ffffff, #ffffff 256px, #f2f2f2 256px, #f2f2f2);
 
   &__wrapper {
-    padding-bottom: 288px;
-    background-image: linear-gradient(174deg, #ffffff, #ffffff 21%, #f2f2f2 21%, #f2f2f2);
+    padding-bottom: 0;
   }
+
   &__paragraf {
     font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 300;
@@ -74,11 +74,10 @@
 @media (min-width: 660px) {
   .advantages {
     margin-top: 7px;
-    background-image: none;
     padding-bottom: 0;
+    background-image: linear-gradient(175.5deg, #ffffff, #ffffff 288px, #f2f2f2 288px, #f2f2f2);
 
     &__wrapper {
-      background-image: linear-gradient(175.75deg, #ffffff, #ffffff 33%, #f2f2f2 33%, #f2f2f2);
       padding-bottom: 8px;
     }
 
@@ -131,5 +130,143 @@
     background-size: 267px auto;
     background-repeat: no-repeat;
     background-position: 50% -6%;
+  }
+}
+
+@media (min-width: 960px) {
+  .advantages {
+    background-image: linear-gradient(175.5deg, #ffffff, #ffffff 379px, #f2f2f2 379px, #f2f2f2);
+
+    &__paragraf {
+      font-size: 50px;
+      line-height: 56px;
+
+      &:nth-of-type(1) {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+      }
+
+      &:nth-of-type(2) {
+        width: 450px;
+        line-height: 60px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      justify-content: flex-start;
+      width: 940px;
+      margin: 0;
+      padding-top: 402px;
+      padding-left: 18px;
+    }
+
+    &__item {
+      position: relative;
+      width: 242px;
+      margin: 0;
+      margin-right: 77px;
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(1)::before {
+        content: "";
+        position: absolute;
+        top: -368px;
+        left: 25px;
+        width: 188px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-1-desktop@1x.png");
+        background-size: 292px 300px;
+        background-repeat: no-repeat;
+        background-position: 47% 50%;
+      }
+
+      &:nth-of-type(2)::before {
+        content: "";
+        position: absolute;
+        top: -368px;
+        left: 29px;
+        width: 188px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-2-desktop@1x.png");
+        background-size: 291px auto;
+        background-repeat: no-repeat;
+        background-position: 47% 50%;
+      }
+
+      &:nth-of-type(3)::before {
+        content: "";
+        position: absolute;
+        top: -368px;
+        left: 29px;
+        width: 188px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-3-desktop@1x.png");
+        background-size: 291px auto;
+        background-repeat: no-repeat;
+        background-position: 47% 50%;
+      }
+
+      &:nth-of-type(1)::after {
+        content: "";
+        position: absolute;
+        top: -36px;
+        left: -30px;
+        width: 300px;
+        height: 9px;
+        background-image: url("../img/shadow.png");
+        background-size: 300px 17px;
+        background-repeat: no-repeat;
+        background-position: 50% 1px;
+      }
+
+      &:nth-of-type(2)::after {
+        content: "";
+        position: absolute;
+        top: -35px;
+        left: -30px;
+        width: 300px;
+        height: 9px;
+        background-image: url("../img/shadow.png");
+        background-size: 300px 17px;
+        background-repeat: no-repeat;
+        background-position: 50% 1px;
+      }
+
+      &:nth-of-type(3)::after {
+        content: "";
+        position: absolute;
+        top: -35px;
+        left: -30px;
+        width: 300px;
+        height: 9px;
+        background-image: url("../img/shadow.png");
+        background-size: 300px 17px;
+        background-repeat: no-repeat;
+        background-position: 50% 1px;
+      }
+    }
+
+    &__title {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 25px;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+
+      & br {
+        display: none;
+      }
+    }
   }
 }

@@ -24,7 +24,7 @@
 }
 
 .page-header--nojs {
-background-color: #283645;
+  background-color: #283645;
 }
 
 .page-header__logo {
@@ -67,7 +67,7 @@ background-color: #283645;
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 960px) {
   .main-nav__toggle {
     position: absolute;
     top: 15px;
@@ -151,7 +151,7 @@ background-color: #283645;
   }
 
   .main-nav--nojs .main-nav__toggle {
-  display: none;
+    display: none;
   }
 }
 
@@ -165,7 +165,7 @@ background-color: #283645;
   .site-list {
     display: flex;
     flex-wrap: wrap;
-    width: 696px;
+    width: 666px;
     padding-top: 4px;
   }
 }
@@ -183,6 +183,7 @@ background-color: #283645;
 
 @media (min-width: 960px) {
   .site-list__item {
+    position: relative;
     margin-right: 81px;
     box-shadow: none;
 
@@ -213,21 +214,30 @@ background-color: #283645;
   vertical-align: middle;
 }
 
+.site-list__item:hover a[href] {
+  color: #d22856;
+}
+
+.site-list__item:active a[href] {
+  color: #d22856;
+  opacity: 0.3;
+}
+
 @media (min-width: 960px) {
   .site-list__item a {
     font-weight: normal;
     line-height: 18px;
     text-transform: none;
   }
-}
 
-.site-list__item:hover a[href] {
-  color: #d22856;
-}
+  .site-list__item:active a[href] {
+    color: #ffffff;
+    opacity: 0.3;
+  }
 
-.site-list__item:active a[href] {
-  color: #000000;
-  opacity: 0.3;
+  .site-list__item--active {
+    border-bottom: 2px solid #ffffff;
+  }
 }
 
 .main-nav--closed .main-nav__wrapper {
@@ -249,5 +259,5 @@ background-color: #283645;
 }
 
 .main-nav--nojs .main-nav__wrapper {
-display: block;
+  display: block;
 }

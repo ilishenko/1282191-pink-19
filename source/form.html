@@ -7,34 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo">
-        <picture>
-          <source media="(min-width: 960px)" srcset="../img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="../img/logo-pink-white-tablet.svg">
-          <img class="page-header__logo-image" src="../img/logo-pink-white-mobile.svg" widht="74.426" height="22.859" alt="Логотип Пинк">
-        </picture>
-      </a>
-      <nav class="main-nav main-nav--closed">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a>Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Html Academy</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <header class="page-header page-header--nojs">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <picture>
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" widht="74.426" height="22.859" alt="Логотип Пинк">
+          </picture>
+        </a>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a>Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a href="#"><span class="site-list__item__upper">Html</span> Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
+
     <main class="main-form">
       <p class="form__tender"> Конкурс на самое безбашенное путешествие с Пинк</p>
       <p class="form__histori">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!<span class="form__histori__write">Пожалуйста, заполните форму ниже:</span>
