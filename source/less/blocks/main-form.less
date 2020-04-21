@@ -4,21 +4,38 @@
 
 .form__tender {
   box-sizing: border-box;
-  padding-top: 96px;
-  padding-left: 30px;
+  padding-top: 101px;
+  padding-left: 32px;
   padding-right: 30px;
   width: 320px;
   margin: 0 auto;
-  height: 238px;
+  height: 242px;
   font-family: "Open Sans", "Arial", sans-serif;
   color: #ffffff;
-  font-weight: light;
+  font-weight: 300;
   font-size: 24px;
+  line-height: 29px;
   text-align: center;
   background-image: url("../img/bg-back-tablet@1x.jpg");
   background-repeat: no-repeat;
-  background-position: -266px 0px;
+  background-position: -266px 0;
   background-size: 844px auto;
+}
+
+@media (min-width: 660px) {
+  .main-form {
+    margin-top: -110px;
+  }
+
+  .form__tender {
+    width: 660px;
+    height: 439px;
+    padding-top: 181px;
+    background-size: 1200px auto;
+    background-position: -269px 0;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }
 
 .form__histori {
@@ -33,4 +50,81 @@
   font-size: 14px;
   line-height: 30px;
   text-align: center;
+
+  &__write {
+    display: none;
+  }
+}
+
+@media (min-width: 660px) {
+  .form__histori {
+    width: 500px;
+    padding-top: 94px;
+    font-size: 18px;
+
+    &__write {
+      display: block;
+    }
+  }
+}
+
+.form__button {
+  margin-top: 44px;
+  margin-left: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 280px;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: #61b98f;
+  }
+
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+  }
+}
+
+@media (min-width: 660px) {
+  .form__button {
+    order: 6;
+  }
+}
+
+.form__required {
+  margin-top: 35px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+  text-align: center;
+
+  & span {
+    color: #d22856;
+  }
+}
+
+@media (min-width: 660px) {
+  .form__required {
+    order: 7;
+  }
 }

@@ -1,17 +1,20 @@
+.form__progress__wrapper {
+  padding-top: 10px;
+  background-color: #f2f2f2;
+}
+
 .form__progress {
   border: none;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
 }
 
 .progress {
-
   &__title {
     display: block;
     margin: 0;
-    margin-bottom: 42px;
-    padding-top: 40px;
+    margin-bottom: 23px;
+    padding-top: 28px;
     font-family: "Open Sans", "Arial", sans-serif;
     color: #d22856;
     font-weight: normal;
@@ -24,6 +27,10 @@
   &__wrapper {
     padding-left: 89px;
     margin-bottom: 52px;
+
+    &:last-child {
+      margin-bottom: 46px;
+    }
   }
 
   &__mark {
@@ -45,7 +52,8 @@
       border: 2px solid #e5e5e5;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &:focus::before {
       border: 2px solid #283645;
     }
 
@@ -55,15 +63,15 @@
   }
 }
 
-.progress__btn:checked+.progress__mark[for="selfie-shark"]::after,
-.progress__btn:checked+.progress__mark[for="burn-beach"]::after,
-.progress__btn:checked+.progress__mark[for="see-chack"]::after,
-.progress__btn:checked+.progress__mark[for="souvenir"]::after,
-.progress__btn:checked+.progress__mark[for="tower"]::after,
-.progress__btn:checked+.progress__mark[for="smash"]::after {
+.progress__btn:checked + .progress__mark[for="selfie-shark"]::after,
+.progress__btn:checked + .progress__mark[for="burn-beach"]::after,
+.progress__btn:checked + .progress__mark[for="see-chack"]::after,
+.progress__btn:checked + .progress__mark[for="souvenir"]::after,
+.progress__btn:checked + .progress__mark[for="tower"]::after,
+.progress__btn:checked + .progress__mark[for="smash"]::after {
   content: "";
   position: absolute;
-  top: 0px;
+  top: 0;
   left: -62px;
   width: 20px;
   height: 8px;
@@ -71,4 +79,29 @@
   border-top-color: transparent;
   border-right-color: transparent;
   transform: rotate(-45deg);
+}
+
+@media (min-width: 660px) {
+  .form__progress__wrapper {
+    order: 4;
+    margin-top: 48px;
+    padding-left: 20px;
+    background-color: #ffffff;
+  }
+
+  .form__progress {
+    border: 2px solid #e5e5e5;
+    width: 620px;
+  }
+
+  .progress {
+    &__title {
+      padding-top: 0;
+      width: 432px;
+
+      & br {
+        display: none;
+      }
+    }
+  }
 }

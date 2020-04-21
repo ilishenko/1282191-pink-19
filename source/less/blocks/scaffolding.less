@@ -24,48 +24,29 @@
 
 
 body {
-  width: 320px;
-  margin: 0 auto;
+  min-width: 320px;
+  margin: 0;
   padding: 0;
   font-family: "Open Sans", "Arial", sans-serif;
   background-color: #ffffff;
+  font-size: 14px;
   color: #000000;
+  font-weight: 300;
 }
 
-@media (min-width: 660px) {
-  body {
-    width: 660px;
-  }
-}
-
-@media (min-width: 960px) {
-  body {
-    width: 960px;
-  }
-}
-
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
-  clip: rect(0, 0, 0, 0);
-}
-
-.page-main {
-  width: 320px;
-  margin: 0 auto;
-}
-
-@media (min-width: 660px) {
-  .page-main {
-    width: 660px;
-  }
-}
-
-@media (min-width: 960px) {
-  .page-main {
-    width: 1200px;
-  }
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .form__wrapper {

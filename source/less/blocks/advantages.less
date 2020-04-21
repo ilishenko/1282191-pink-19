@@ -2,7 +2,11 @@
 .advantages {
   padding-top: 43px;
   padding-bottom: 285px;
-  background-image: linear-gradient(174deg, #ffffff, #ffffff 24%, #f2f2f2 24%, #f2f2f2);
+  background-image: linear-gradient(174deg, #ffffff, #ffffff 256px, #f2f2f2 256px, #f2f2f2);
+
+  &__wrapper {
+    padding-bottom: 0;
+  }
 
   &__paragraf {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -18,7 +22,7 @@
 
   &__list {
     .reset_ul();
-    width: 280px;
+    width: 283px;
     margin: 0 auto;
     margin-top: 118px;
   }
@@ -61,35 +65,36 @@
     line-height: 24px;
     color: #283645;
   }
-
-  &__timer {
-    display: none;
-  }
 }
 
 .advantages__description br {
   display: none;
 }
 
-@media(min-width: 660px) {
+@media (min-width: 660px) {
   .advantages {
-    margin-top: 5px;
-    background-image: none;
+    margin-top: 7px;
+    margin-bottom: 95px;
     padding-bottom: 0;
+    background-image: linear-gradient(175.5deg, #ffffff, #ffffff 288px, #f2f2f2 288px, #f2f2f2);
 
     &__wrapper {
-      background-image: linear-gradient(175.75deg, #ffffff, #ffffff 33%, #f2f2f2 33%, #f2f2f2);
       padding-bottom: 8px;
     }
 
     &__paragraf {
       font-size: 40px;
       margin-bottom: 2px;
+
+      &:nth-of-type(1) {
+        padding: 0;
+        width: 620px;
+      }
     }
 
     &__list {
       width: 310px;
-      margin-left: 328px;
+      padding-left: 310px;
       margin-top: 125px;
     }
 
@@ -127,64 +132,144 @@
     background-repeat: no-repeat;
     background-position: 50% -6%;
   }
+}
 
-  .advantages__timer {
-    display: block;
-    position: relative;
-    width: 310px;
-    margin-top: 95px;
-    padding-left: 328px;
+@media (min-width: 960px) {
+  .advantages {
     margin-bottom: 0;
+    background-image: linear-gradient(175.5deg, #ffffff, #ffffff 379px, #f2f2f2 379px, #f2f2f2);
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: -37px;
-      left: 20px;
-      width: 238px;
-      height: 276px;
-      background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
-      background-repeat: no-repeat;
-      background-size: 202px 202px, 238px 276px;
-      background-position: 50% 74%, 50% 50%;
+    &__paragraf {
+      font-size: 50px;
+      line-height: 56px;
+
+      &:nth-of-type(1) {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        padding-left: 10px;
+      }
+
+      &:nth-of-type(2) {
+        width: 450px;
+        line-height: 60px;
+      }
     }
 
-    &::after {
-      content: "24";
-      position: absolute;
-      color: #d22856;
-      font-size: 96px;
-      font-weight: bold;
-      padding-top: 96px;
-      padding-left: 63px;
-      top: -37px;
-      left: 20px;
+    &__list {
+      display: flex;
+      justify-content: flex-start;
+      width: 940px;
+      margin: 0;
+      padding-top: 402px;
+      padding-left: 40px;
+    }
+
+    &__item {
+      position: relative;
+      width: 242px;
+      margin: 0;
+      margin-right: 77px;
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+
+      &:nth-of-type(1)::before {
+        content: "";
+        position: absolute;
+        top: -368px;
+        left: 25px;
+        width: 188px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-1-desktop@1x.png");
+        background-size: 292px 300px;
+        background-repeat: no-repeat;
+        background-position: 47% 50%;
+      }
+
+      &:nth-of-type(2)::before {
+        content: "";
+        position: absolute;
+        top: -368px;
+        left: 29px;
+        width: 188px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-2-desktop@1x.png");
+        background-size: 291px auto;
+        background-repeat: no-repeat;
+        background-position: 47% 50%;
+      }
+
+      &:nth-of-type(3)::before {
+        content: "";
+        position: absolute;
+        top: -368px;
+        left: 29px;
+        width: 188px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-3-desktop@1x.png");
+        background-size: 291px auto;
+        background-repeat: no-repeat;
+        background-position: 47% 50%;
+      }
+
+      &:nth-of-type(1)::after {
+        content: "";
+        position: absolute;
+        top: -36px;
+        left: -30px;
+        width: 300px;
+        height: 9px;
+        background-image: url("../img/shadow.png");
+        background-size: 300px 17px;
+        background-repeat: no-repeat;
+        background-position: 50% 1px;
+      }
+
+      &:nth-of-type(2)::after {
+        content: "";
+        position: absolute;
+        top: -35px;
+        left: -30px;
+        width: 300px;
+        height: 9px;
+        background-image: url("../img/shadow.png");
+        background-size: 300px 17px;
+        background-repeat: no-repeat;
+        background-position: 50% 1px;
+      }
+
+      &:nth-of-type(3)::after {
+        content: "";
+        position: absolute;
+        top: -35px;
+        left: -30px;
+        width: 300px;
+        height: 9px;
+        background-image: url("../img/shadow.png");
+        background-size: 300px 17px;
+        background-repeat: no-repeat;
+        background-position: 50% 1px;
+      }
     }
 
     &__title {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 25px;
       font-size: 30px;
-      line-height: 36px;
-      margin-bottom: 0;
+      line-height: 30px;
     }
 
-    &__paragraf {
-      margin-top: 9px;
-      margin-bottom: 0;
-      font-family: "Open Sans", "Arial", sans-serif;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-      color: #283645;
-    }
+    &__description {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
 
-    &__know {
-      display: block;
-      margin-top: 11px;
-      font-family: "Open Sans", "Arial", sans-serif;
-      font-weight: normal;
-      font-size: 14px;
-      line-height: 24px;
-      color: #d22856;
+      & br {
+        display: none;
+      }
     }
   }
 }

@@ -1,30 +1,38 @@
+.container {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 @media (min-width: 660px) {
-  .download-container {
+  .container {
     width: 660px;
-    margin: 0 auto;
   }
 }
 
 @media (min-width: 960px) {
-  .download-container {
+  .container {
     width: 960px;
-    margin: 0 auto;
+    padding: 0 10px;
   }
 }
 
 .download {
-  margin: 0 auto;
   background-color: #1d2631;
-  margin-top: -70px;
+  margin-top: -66px;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 178px, 50% 1%;
+  background-size: 258px 286px, 100% 461px;
 
   &__access {
     background-color: #1d2631;
     margin: 0;
     padding-top: 18px;
-    padding-bottom: 29px;
+    padding-bottom: 30px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: 300;
     line-height: 24px;
     color: #ffffff;
     padding-left: 20px;
@@ -35,22 +43,20 @@
 
 @media (min-width: 660px) {
   .download {
-    width: 660px;
     min-height: 727px;
-    padding-left: 20px;
-    padding-right: 20px;
     margin-top: -108px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: -20px 100%, 55% 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -18px 99.8%, 52% 0%;
+    background-size: 700px auto, 1200px 729px;
 
     &__access {
       background-color: transparent;
       font-size: 18px;
       font-weight: normal;
-      margin-top: 32px;
       padding: 0;
       width: 308px;
+      margin-left: 2px;
     }
   }
 }
@@ -58,42 +64,55 @@
 @media (min-width: 960px) {
   .download {
     width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    margin-top: 0;
+    margin-bottom: 28px;
+    min-height: 828px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 110% 100%, 50.1% 2%;
+    background-size: 830px auto, 2560px auto;
+
+    &__access {
+      padding-left: 10px;
+    }
   }
 }
 
 .download__paragraf {
-  margin-top: -1px;
-  margin-bottom: 0;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 347px;
   width: 280px;
-  min-height: 371px;
-  padding-top: 95px;
+  padding-top: 92px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
   color: #ffffff;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-weight: 300;
   font-size: 24px;
-  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 0% 100%, 50% 50%;
 }
 
 @media (min-width: 660px) {
   .download__paragraf {
     background-image: none;
-    margin-top: 0px;
-    margin-left: 25px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    padding-left: 35px;
     padding-top: 202px;
-    min-height: 0px;
-    width: 205px;
+    min-height: 0;
+    width: 290px;
     font-size: 40px;
     line-height: 47px;
+  }
+}
+
+@media (min-width: 960px) {
+  .download__paragraf {
+    width: 320px;
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 21px;
+    padding-top: 193px;
+    margin-bottom: 54px;
   }
 }
 
@@ -108,7 +127,7 @@
   text-decoration: none;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: bold;
   text-align: center;
   vertical-align: middle;
   color: #ffffff;
@@ -129,9 +148,17 @@
 @media (min-width: 660px) {
   .button {
     margin-top: 32px;
-    margin-left: 0;
+    margin-left: 2px;
     width: 300px;
     margin-bottom: 47px;
+  }
+}
+
+@media (min-width: 960px) {
+  .button {
+    font-size: 21px;
+    margin-left: 12px;
+    margin-bottom: 67px;
   }
 }
 
@@ -140,15 +167,15 @@
   background-color: #1d2631;
   display: flex;
   flex-wrap: wrap;
-  width: 232px;
+  width: 206px;
   margin: 0 auto;
-  margin-left: 56px;
+  //margin-left: 32px;
 
   &__item {
     margin-right: 32px;
 
     &:nth-child(3n) {
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }
@@ -157,6 +184,14 @@
   .icon-list {
     background-color: transparent;
     margin-left: 48px;
+    margin-bottom: 31px;
+  }
+}
+
+@media (min-width: 960px) {
+  .icon-list {
+    margin-left: 58px;
+    margin-bottom: 50px;
   }
 }
 
