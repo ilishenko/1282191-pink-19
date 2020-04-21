@@ -20,11 +20,11 @@
 
 .download {
   background-color: #1d2631;
-  margin-top: -70px;
+  margin-top: -66px;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 42% 38.4%, 50% 1%;
-  background-size: 260px 292px, 100% 460px;
+  background-position: 0 178px, 50% 1%;
+  background-size: 258px 286px, 100% 461px;
 
   &__access {
     background-color: #1d2631;
@@ -47,17 +47,16 @@
     margin-top: -108px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: -35px 99.8%, 52% 0%;
+    background-position: -18px 99.8%, 52% 0%;
     background-size: 700px auto, 1200px 729px;
 
     &__access {
       background-color: transparent;
       font-size: 18px;
       font-weight: normal;
-      margin-top: 32px;
       padding: 0;
       width: 308px;
-      margin-left: -13px;
+      margin-left: 2px;
     }
   }
 }
@@ -65,29 +64,30 @@
 @media (min-width: 960px) {
   .download {
     width: 100%;
+    margin-top: 0;
     margin-bottom: 28px;
-    min-height: 849px;
+    min-height: 828px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 100% 100%, 50.1% 2%;
+    background-position: 110% 100%, 50.1% 2%;
     background-size: 830px auto, 2560px auto;
 
     &__access {
-      padding-left: 5px;
+      padding-left: 10px;
     }
   }
 }
 
 .download__paragraf {
-  margin-top: -1px;
-  margin-bottom: 346px;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 347px;
   width: 280px;
-  padding-top: 95px;
+  padding-top: 92px;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
   color: #ffffff;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 24px;
 }
 
@@ -96,10 +96,10 @@
     background-image: none;
     margin-top: 0;
     margin-bottom: 35px;
-    padding-left: 30px;
+    padding-left: 35px;
     padding-top: 202px;
     min-height: 0;
-    width: 205px;
+    width: 290px;
     font-size: 40px;
     line-height: 47px;
   }
@@ -107,11 +107,11 @@
 
 @media (min-width: 960px) {
   .download__paragraf {
-    width: 240px;
+    width: 320px;
     font-size: 50px;
-    line-height: 58px;
+    line-height: 60px;
     padding-left: 21px;
-    padding-top: 219px;
+    padding-top: 193px;
     margin-bottom: 54px;
   }
 }
@@ -148,7 +148,7 @@
 @media (min-width: 660px) {
   .button {
     margin-top: 32px;
-    margin-left: -14px;
+    margin-left: 2px;
     width: 300px;
     margin-bottom: 47px;
   }
@@ -157,7 +157,7 @@
 @media (min-width: 960px) {
   .button {
     font-size: 21px;
-    margin-left: -10px;
+    margin-left: 12px;
     margin-bottom: 67px;
   }
 }
@@ -169,7 +169,7 @@
   flex-wrap: wrap;
   width: 232px;
   margin: 0 auto;
-  margin-left: 38px;
+  margin-left: 32px;
 
   &__item {
     margin-right: 32px;
@@ -183,14 +183,15 @@
 @media (min-width: 660px) {
   .icon-list {
     background-color: transparent;
-    margin-left: 33px;
+    margin-left: 48px;
+    margin-bottom: 31px;
   }
 }
 
 @media (min-width: 960px) {
   .icon-list {
-    margin-left: 38px;
-    margin-bottom: 52px;
+    margin-left: 58px;
+    margin-bottom: 50px;
   }
 }
 

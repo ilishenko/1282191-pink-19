@@ -5,51 +5,55 @@
 @media (min-width: 660px) {
   .timer {
     display: block;
-    position: relative;
-    width: 310px;
-    margin-top: 95px;
-    padding-left: 328px;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: -37px;
-      left: 20px;
-      width: 238px;
-      height: 276px;
-      background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
-      background-repeat: no-repeat;
-      background-size: 202px 202px, 238px 276px;
-      background-position: 50% 74%, 50% 50%;
+    &__wrapper {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: -37px;
+        left: 22px;
+        width: 238px;
+        height: 276px;
+        background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+        background-repeat: no-repeat;
+        background-size: 202px 202px, 238px 276px;
+        background-position: 50% 74%, 50% 50%;
+      }
+
+      &::after {
+        content: "24";
+        position: absolute;
+        color: #d22856;
+        font-size: 96px;
+        font-weight: bold;
+        padding-top: 96px;
+        padding-left: 65px;
+        top: -37px;
+        left: 20px;
+      }
     }
 
-    &::after {
-      content: "24";
-      position: absolute;
-      color: #d22856;
-      font-size: 96px;
-      font-weight: bold;
-      padding-top: 96px;
-      padding-left: 63px;
-      top: -37px;
-      left: 20px;
-    }
 
     &__title {
       font-size: 30px;
       line-height: 36px;
-      margin-bottom: 0;
+      margin: 0;
+      margin-bottom: 9px;
+      padding-left: 310px;
     }
 
     &__paragraf {
-      margin-top: 9px;
-      margin-bottom: 0;
-      font-family: "Open Sans", "Arial", sans-serif;
+      margin: 0;
+      margin-bottom: 11px;
       font-weight: normal;
-      font-size: 14px;
       line-height: 24px;
       color: #283645;
+      padding-left: 310px;
 
       &__desctop {
         display: none;
@@ -58,10 +62,8 @@
 
     &__know {
       display: block;
-      margin-top: 11px;
-      font-family: "Open Sans", "Arial", sans-serif;
       font-weight: normal;
-      font-size: 14px;
+      padding-left: 310px;
       line-height: 24px;
       color: #d22856;
     }
@@ -73,42 +75,42 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    padding-left: 367px;
     padding-top: 130px;
     background-color: #f2f2f2;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 38px;
-      left: 1px;
-      width: 300px;
-      height: 348px;
-      background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
-      background-repeat: no-repeat;
-      background-size: 253px 253px, 298px 346px;
-      background-position: 50% 74%, 50% 50%;
-    }
+        &__wrapper {
+      width: 960px;
 
-    &::after {
-      content: "24";
-      position: absolute;
-      color: #d22856;
-      font-size: 120px;
-      font-weight: bold;
-      padding-top: 196px;
-      padding-left: 61px;
-      top: -37px;
-      left: 20px;
-    }
+      &::before {
+        content: "";
+        position: absolute;
+        top: -95px;
+        left: 20px;
+        width: 300px;
+        height: 348px;
+        background-image: url("../img/icon-editor-diagram-fill.svg"), url("../img/icon-timer.svg");
+        background-repeat: no-repeat;
+        background-size: 253px 253px, 298px 346px;
+        background-position: 50% 74%, 50% 50%;
+      }
 
-    &__wrapper {
-      width: 530px;
+      &::after {
+        content: "24";
+        position: absolute;
+        color: #d22856;
+        font-size: 120px;
+        font-weight: bold;
+        padding-top: 196px;
+        padding-left: 61px;
+        top: -168px;
+        left: 40px;
+      }
     }
 
     &__title {
       margin: 0;
       margin-bottom: 23px;
+      padding-left: 378px;
 
       & br {
         display: none;
@@ -119,6 +121,7 @@
       font-size: 18px;
       line-height: 29px;
       margin-bottom: 35px;
+      padding-left: 378px;
 
       &__tablet {
         display: none;
@@ -132,6 +135,7 @@
     &__know {
       font-size: 18px;
       padding-bottom: 116px;
+      padding-left: 378px;
     }
   }
 }
