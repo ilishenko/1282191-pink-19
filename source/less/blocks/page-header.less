@@ -26,9 +26,13 @@
   }
 
   .page-header__wrapper {
+    box-sizing: border-box;
     width: 960px;
     padding-top: 27px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -61,7 +65,8 @@
 
 @media (min-width: 960px) {
   .page-header__logo {
-    margin-right: 170px;
+    margin-right: 169px;
+    padding-left: 0;
   }
 }
 
