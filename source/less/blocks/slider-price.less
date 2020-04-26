@@ -1,6 +1,38 @@
 .slider-price {
+  overflow: hidden;
+  width: 320px;
+  padding-top: 130px;
+
+  &__yes {
+    width: 29px;
+    height: 27px;
+    margin-left: 230px;
+    margin-top: 10px;
+  }
+
+  &__no {
+    width: 27px;
+    height: 26px;
+    margin-left: 231px;
+    margin-top: 9px;
+  }
+
+  &__list {
+    position: relative;
+    border-collapse: collapse;
+    width: 840px;
+    transform: translateX(-260px);
+  }
+
   &__first-column {
-    display: none;
+    position: absolute;
+    display: block;
+    font-weight: normal;
+    line-height: 30px;
+    color: #283645;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-left: 304px;//41px;
 
     &__title {
       display: none;
@@ -8,16 +40,18 @@
   }
 
   &__second-column {
-    display: none;
+    display: block;
+    border-bottom: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    width: 280px;
+    height: 58px;
 
-    &__title {
-      display: none;
-    }
-  }
-
-  &__third-column {
     &__title {
       width: 280px;
+      border-left: 2px solid #e5e5e5;
+      border-right: 2px solid #e5e5e5;
+      padding-top: 16px;
       font-size: 18px;
       line-height: 30px;
       font-weight: bold;
@@ -30,15 +64,58 @@
         font-size: 24px;
         line-height: 30px;
         font-weight: 300;
+        padding-top: 1px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  &__third-column {
+    border-bottom: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    height: 58px;
+
+    &__title {
+      width: 280px;
+      font-size: 18px;
+      line-height: 34px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #283645;
+      border-right: 2px solid #e5e5e5;
+
+      & span {
+        display: block;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 300;
       }
     }
   }
 
   &__fourth-column {
-    display: none;
+    display: block;
+    border-bottom: 2px solid #e5e5e5;
+    border-right: 2px solid #e5e5e5;
+    height: 58px;
 
     &__title {
-      display: none;
+      width: 280px;
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #283645;
+      border-right: 2px solid #e5e5e5;
+
+      & span {
+        display: block;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 300;
+      }
     }
   }
 }

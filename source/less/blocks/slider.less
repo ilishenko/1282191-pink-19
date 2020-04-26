@@ -1,7 +1,15 @@
 .slider {
   &__list {
     .reset_ul();
-    margin-bottom: 29px;
+    margin-bottom: 33px;
+  }
+
+  &__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
   }
 
   &__author-name {
@@ -13,11 +21,15 @@
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
+
+    &__profession {
+      display: none;
+    }
   }
 
   &__text {
     margin: 0 auto;
-    width: 284px;
+    width: 280px;
     text-align: center;
     color: #283645;
     line-height: 30px;
@@ -25,14 +37,19 @@
   }
 
   &__toggles {
-    position: relative;
-    width: 68px;
+    display: flex;
+    justify-content: space-between;
+    width: 62px;
     height: 15px;
   }
 
   &__toggle {
+    position: relative;
+    display: block;
     background-color: transparent;
     border: none;
+    width: 12px;
+    height: 12px;
 
     &::before {
       content: "";
@@ -48,18 +65,18 @@
     }
 
     &:nth-of-type(1)::before {
-      top: 4px;
-      left: 4px;
+      top: 0;
+      left: 0;
     }
 
     &:nth-of-type(2)::before {
-      top: 4px;
-      left: 28px;
+      top: 0;
+      left: 0;
     }
 
     &:nth-of-type(3)::before {
-      top: 4px;
-      left: 54px;
+      top: 0;
+      left: 0;
     }
 
     &:hover::before,
@@ -88,6 +105,107 @@
         background-color: #ffffff;
         cursor: pointer;
         opacity: 1;
+      }
+    }
+
+    &--left,
+    &--right {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .slider {
+    &__wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__author-name {
+      font-size: 20px;
+      margin: 0 auto;
+
+      &__profession {
+        display: block;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 33px;
+        color: #283645;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      width: 620px;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .slider {
+    &__list {
+      margin: 0;
+    }
+
+    &__text {
+      width: 690px;
+      padding-top: 127px;
+      margin-bottom: 36px;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-position: 311px 14px;
+    }
+
+    &__author-name {
+      font-size: 24px;
+
+      &__profession {
+        font-size: 18px;
+        line-height: 34px;
+      }
+    }
+
+    &__toggles {
+      position: relative;
+    }
+
+    &__toggle {
+      display: none;
+
+      &--left,
+      &--right {
+        display: block;
+        border: none;
+        border-left: 2px solid #283645;
+        border-bottom: 2px solid #283645;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: -157px;
+        background-color: transparent;
+        opacity: 0.3;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+          opacity: 0.6;
+        }
+
+        &:active {
+          opacity: 0.1;
+        }
+      }
+
+      &--left {
+        left: -432px;
+        transform: rotate(45deg);
+      }
+
+      &--right {
+        left: 467px;
+        transform: rotate(225deg);
       }
     }
   }
