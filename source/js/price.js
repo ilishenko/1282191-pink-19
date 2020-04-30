@@ -10,6 +10,9 @@ toggleLeft.addEventListener('click', function() {
     price.classList.remove('slider-price__list--center');
     price.classList.remove('slider-price__list--right');
     price.classList.add('slider-price__list--left');
+    toggle.classList.remove('slider__toggle--active');
+    toggleRight.classList.remove('slider__toggle--active');
+    toggleLeft.classList.add('slider__toggle--active');
   }
 });
 
@@ -20,6 +23,9 @@ toggle.addEventListener('click', function() {
     price.classList.remove('slider-price__list--left');
     price.classList.remove('slider-price__list--right');
     price.classList.add('slider-price__list--center');
+    toggleLeft.classList.remove('slider__toggle--active');
+    toggleRight.classList.remove('slider__toggle--active');
+    toggle.classList.add('slider__toggle--active');
   }
 });
 
@@ -30,5 +36,8 @@ toggleRight.addEventListener('click', function() {
     price.classList.remove('slider-price__list--left');
     price.classList.remove('slider-price__list--center');
     price.classList.add('slider-price__list--right');
+    toggleLeft.classList.remove('slider__toggle--active');
+    toggle.classList.remove('slider__toggle--active');
+    toggleRight.classList.add('slider__toggle--active');
   }
 });

@@ -37,6 +37,7 @@
     border-collapse: collapse;
     border-spacing: 0;
     width: 840px;
+    margin-bottom: 40px;
 
     &--left {
       transform: translateX(20px);
@@ -50,37 +51,6 @@
       transform: translateX(-260px);
     }
   }
-
-  /*&__first-column {
-    //display: block;
-    font-weight: normal;
-    line-height: 30px;
-    color: #283645;
-    text-transform: uppercase;
-    border: none;
-
-    &--filter {
-      position: absolute;
-      top: 112px;
-      left: 303px;
-    }
-
-    &--smile {
-      position: absolute;
-      top: 173px;
-      left: 303px;
-    }
-
-    &--comment {
-      position: absolute;
-      top: 234px;
-      left: 303px;
-    }
-
-    &__title {
-      display: none;
-    }
-  }*/
 
   &__second-column {
     border-bottom: 2px solid #e5e5e5;
@@ -117,6 +87,7 @@
     width: 280px;
 
     &__title {
+      position: relative;
       width: 280px;
       font-size: 18px;
       line-height: 34px;
@@ -131,6 +102,28 @@
         font-size: 24px;
         line-height: 30px;
         font-weight: 300;
+      }
+
+      ::before {
+        content: "";
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: -4px;
+        left: -5px;
+        background-image: url("../img/bg-hit.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+
+      ::after {
+        content: "Хит";
+        position: absolute;
+        text-transform: uppercase;
+        transform: rotate(-45deg);
+        font-size: 14px;
+        top: 12px;
+        left: 10px;
       }
     }
   }
