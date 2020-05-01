@@ -5,7 +5,7 @@ var toggleRight = document.querySelector('.slider__toggle--3');
 
 toggleLeft.addEventListener('click', function() {
   if (price.classList.contains('slider-price__list--left')) {
-
+    return;
   } else {
     price.classList.remove('slider-price__list--center');
     price.classList.remove('slider-price__list--right');
@@ -18,7 +18,7 @@ toggleLeft.addEventListener('click', function() {
 
 toggle.addEventListener('click', function() {
   if (price.classList.contains('slider-price__list--center')) {
-
+    return;
   } else {
     price.classList.remove('slider-price__list--left');
     price.classList.remove('slider-price__list--right');
@@ -31,7 +31,7 @@ toggle.addEventListener('click', function() {
 
 toggleRight.addEventListener('click', function() {
   if (price.classList.contains('slider-price__list--right')) {
-
+    return;
   } else {
     price.classList.remove('slider-price__list--left');
     price.classList.remove('slider-price__list--center');
