@@ -25,21 +25,21 @@
   background-repeat: no-repeat, no-repeat;
   background-position: 0 178px, 50% 1%;
   background-size: 258px 286px, 100% 461px;
-
-  &__access {
-    background-color: #1d2631;
-    margin: 0;
-    padding-top: 18px;
-    padding-bottom: 30px;
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    color: #ffffff;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-  }
 }
+.download__access {
+  background-color: #1d2631;
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
 
 @media (min-width: 660px) {
   .download {
@@ -49,15 +49,16 @@
     background-repeat: no-repeat, no-repeat;
     background-position: -18px 99.8%, 52% 0%;
     background-size: 700px auto, 1200px 729px;
+  }
 
-    &__access {
-      background-color: transparent;
-      font-size: 18px;
-      font-weight: normal;
-      padding: 0;
-      width: 308px;
-      margin-left: 2px;
-    }
+  .download__access {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0;
+    padding-bottom: 10px;
+    width: 308px;
+    margin-left: 2px;
   }
 }
 
@@ -71,11 +72,12 @@
     background-repeat: no-repeat, no-repeat;
     background-position: 100% 211px, -800px 2%;
     background-size: 830px auto, 2560px auto;
+  }
 
-    &__access {
-      padding-left: 0;
-      font-weight: 300;
-    }
+  .download__access {
+    padding-left: 0;
+    font-weight: 300;
+    padding-bottom: 10px;
   }
 }
 
@@ -170,13 +172,13 @@
   flex-wrap: wrap;
   width: 206px;
   margin: 0 auto;
+}
 
-  &__item {
-    margin-right: 32px;
+.icon-list__item {
+  margin-right: 32px;
 
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+  &:nth-child(3n) {
+    margin-right: 0;
   }
 }
 

@@ -1,212 +1,207 @@
-.slider {
-  &__list {
-    .reset_ul();
-    margin-bottom: 33px;
-  }
+.slider__list {
+  .reset_ul();
+  margin-bottom: 33px;
+}
 
-  &__item {
-    display: none;
+.slider__item {
+  display: none;
 
-    &--active {
-      display: block;
-    }
-  }
-
-  &__author-name {
-    margin: 0;
-    margin-bottom: 13px;
+  &--active {
     display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 30px;
-    font-style: normal;
+  }
+}
 
-    &__profession {
-      display: none;
-    }
+.slider__author-name {
+  margin: 0;
+  margin-bottom: 13px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+}
+
+.slider__author-name__profession {
+  display: none;
+}
+
+.slider__text {
+  margin: 0 auto;
+  width: 280px;
+  text-align: center;
+  color: #283645;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.slider__toggles {
+  display: flex;
+  flex-wrap: wrap;
+  width: 62px;
+  height: 15px;
+}
+
+.slider__toggle {
+  position: relative;
+  display: block;
+  background-color: transparent;
+  border: none;
+  width: 12px;
+  height: 12px;
+  margin-right: 13px;
+
+  &:nth-of-type(3) {
+    margin-right: 0;
   }
 
-  &__text {
-    margin: 0 auto;
-    width: 280px;
-    text-align: center;
-    color: #283645;
-    line-height: 30px;
-    font-weight: normal;
+  &::before {
+    content: "";
+    box-sizing: content-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background-color: #283645;
+    opacity: 0.3;
+    cursor: pointer;
   }
 
-  &__toggles {
-    display: flex;
-    justify-content: space-between;
-    width: 62px;
-    height: 15px;
+  &:nth-of-type(1)::before {
+    top: 0;
+    left: 0;
   }
 
-  &__toggle {
-    position: relative;
-    display: block;
+  &:nth-of-type(2)::before {
+    top: 0;
+    left: 0;
+  }
+
+  &:nth-of-type(3)::before {
+    top: 0;
+    left: 0;
+  }
+
+  &:hover::before,
+  &:focus::before, {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.1;
+  }
+
+  &--active {
     background-color: transparent;
     border: none;
-    width: 12px;
-    height: 12px;
 
     &::before {
       content: "";
       box-sizing: content-box;
       position: absolute;
+      top: 0;
+      left: 0;
       width: 6px;
       height: 6px;
-      border: 3px solid #ffffff;
+      border: 3px solid #283645;
       border-radius: 50%;
-      background-color: #283645;
-      opacity: 0.3;
+      background-color: #ffffff;
       cursor: pointer;
+      opacity: 1;
     }
+  }
 
-    &:nth-of-type(1)::before {
-      top: 0;
-      left: 0;
-    }
-
-    &:nth-of-type(2)::before {
-      top: 0;
-      left: 0;
-    }
-
-    &:nth-of-type(3)::before {
-      top: 0;
-      left: 0;
-    }
-
-    &:hover::before,
-    &:focus::before, {
-      opacity: 0.6;
-    }
-
-    &:active::before {
-      opacity: 0.1;
-    }
-
-    &--active {
-      background-color: transparent;
-      border: none;
-
-      &::before {
-        content: "";
-        box-sizing: content-box;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 6px;
-        height: 6px;
-        border: 3px solid #283645;
-        border-radius: 50%;
-        background-color: #ffffff;
-        cursor: pointer;
-        opacity: 1;
-      }
-    }
-
-    &--left,
-    &--right {
-      display: none;
-    }
+  &--left,
+  &--right {
+    display: none;
   }
 }
 
 @media (min-width: 660px) {
-  .slider {
-    &__wrapper {
-      display: flex;
-      flex-direction: column-reverse;
-    }
+  .slider__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  }
 
-    &__author-name {
-      font-size: 20px;
-      margin: 0 auto;
+  .slider__author-name {
+    font-size: 20px;
+    margin: 0 auto;
+  }
 
-      &__profession {
-        display: block;
-        font-size: 14px;
-        font-weight: normal;
-        line-height: 33px;
-        color: #283645;
-      }
-    }
+  .slider__author-name__profession {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 33px;
+    color: #283645;
+  }
 
-    &__text {
-      font-size: 18px;
-      width: 620px;
-      margin-bottom: 35px;
-    }
+  .slider__text {
+    font-size: 18px;
+    width: 620px;
+    margin-bottom: 35px;
   }
 }
 
 @media (min-width: 960px) {
-  .slider {
-    &__list {
-      margin: 0;
-    }
+  .slider__list {
+    margin: 0;
+  }
 
-    &__text {
-      width: 690px;
-      padding-top: 127px;
-      margin-bottom: 36px;
-      background-image: url("../img/icon-quotes.svg");
-      background-repeat: no-repeat;
-      background-position: 311px 14px;
-    }
+  .slider__text {
+    width: 690px;
+    padding-top: 127px;
+    margin-bottom: 36px;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 311px 14px;
+  }
 
-    &__author-name {
+  .slider__author-name {
       font-size: 24px;
+    }
 
-      &__profession {
-        font-size: 18px;
-        line-height: 34px;
+  .slider__author-name__profession {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  .slider__toggle {
+    display: none;
+
+    &--left,
+    &--right {
+      display: block;
+      border: none;
+      border-left: 2px solid #283645;
+      border-bottom: 2px solid #283645;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 161px;
+      background-color: transparent;
+      opacity: 0.3;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.1;
       }
     }
 
-    &__toggles {
-      position: relative;
+    &--left {
+      left: 16px;
+      transform: rotate(45deg);
     }
 
-    &__toggle {
-      display: none;
-
-      &--left,
-      &--right {
-        display: block;
-        border: none;
-        border-left: 2px solid #283645;
-        border-bottom: 2px solid #283645;
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        top: -157px;
-        background-color: transparent;
-        opacity: 0.3;
-        cursor: pointer;
-
-        &:hover,
-        &:focus {
-          opacity: 0.6;
-        }
-
-        &:active {
-          opacity: 0.1;
-        }
-      }
-
-      &--left {
-        left: -432px;
-        transform: rotate(45deg);
-      }
-
-      &--right {
-        left: 467px;
-        transform: rotate(225deg);
-      }
+    &--right {
+      left: 914px;
+      transform: rotate(225deg);
     }
   }
 }
