@@ -11,9 +11,9 @@
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" widht="74.426" height="22.859" alt="Логотип Пинк">
+            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" widht="74.426" height="22.859" alt="Логотип Пинк">
           </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -79,7 +79,7 @@
       <section class="timer">
         <div class="timer__wrapper  container">
           <h3 class="timer__title">Эффект<br> на 24 часа!</h3>
-          <p class="timer__paragraf">Британские учёные провели исследования и доказали,<br class="timer__paragraf__desctop"> что положительный эффект<br class="timer__paragraf__tablet"> от использования приложения длится целые сутки!</p>
+          <p class="timer__paragraf">Британские учёные провели исследования и доказали,<br class="timer__desctop"> что положительный эффект<br class="timer__tablet"> от использования приложения длится целые сутки!</p>
           <a class="timer__know" href="#">Узнать больше об исследовании</a>
         </div>
       </section>
@@ -90,21 +90,21 @@
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item slider__item--active">
               <div class="slider__wrapper">
-                <cite class="slider__author-name">Николай Петров<span class="slider__author-name__profession">25 лет, водитель трамвая</span></cite>
+                <cite class="slider__author-name">Николай Петров<span class="slider__author-profession">25 лет, водитель трамвая</span></cite>
                 <p class="slider__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;
                 </p>
               </div>
             </li>
             <li class="reviews__item slider__item">
               <div class="slider__wrapper">
-                <cite class="slider__author-name">Николай Петров<span class="slider__author-name__profession">25 лет, водитель трамвая</span></cite>
+                <cite class="slider__author-name">Николай Петров<span class="slider__author-profession">25 лет, водитель трамвая</span></cite>
                 <p class="slider__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;
                 </p>
               </div>
             </li>
             <li class="reviews__item slider__item">
               <div class="slider__wrapper">
-                <cite class="slider__author-name">Николай Петров<span class="slider__author-name__profession">25 лет, водитель трамвая</span></cite>
+                <cite class="slider__author-name">Николай Петров<span class="slider__author-profession">25 лет, водитель трамвая</span></cite>
                 <p class="slider__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;
                 </p>
               </div>
@@ -126,10 +126,10 @@
 
           <table class="price__list slider-price__list slider-price__list--center">
             <tr class="price__item slider-price__item">
-              <th class="slider-price__first-column__title"></th>
-              <th class="slider-price__second-column__title">База<span>1,99 usd</span></th>
-              <th class="slider-price__third-column__title">Стандарт<span>3,99 usd</span></th>
-              <th class="slider-price__fourth-column__title">Анлим<span>9,99 usd</span></th>
+              <th class="slider-price__first-title"></th>
+              <th class="slider-price__second-title">База<span>1,99 usd</span></th>
+              <th class="slider-price__third-title">Стандарт<span>3,99 usd</span></th>
+              <th class="slider-price__fourth-title">Анлим<span>9,99 usd</span></th>
             </tr>
             <tr>
               <td class="slider-price__first-column">Розовый фильтр</td>
@@ -242,7 +242,12 @@
       </section>
 
       <section  class="map">
-        <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6059930518893!2d30.321269608937822!3d59.93896839959574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585410296204!5m2!1sru!2sru" width="400" height="300" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg">
+          <img class="map__image" src="img/bg-map-mobile@1x.jpg" widht="320" height="200" alt="Карта адреса Пинк">
+        </picture>
+        <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6059930518893!2d30.321269608937822!3d59.93896839959574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585410296204!5m2!1sru!2sru" width="320" height="200" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>
     </main>
 

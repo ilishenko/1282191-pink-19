@@ -22,7 +22,7 @@
   font-style: normal;
 }
 
-.slider__author-name__profession {
+.slider__author-profession {
   display: none;
 }
 
@@ -129,7 +129,7 @@
     margin: 0 auto;
   }
 
-  .slider__author-name__profession {
+  .slider__author-profession {
     display: block;
     font-size: 14px;
     font-weight: normal;
@@ -162,7 +162,7 @@
       font-size: 24px;
     }
 
-  .slider__author-name__profession {
+  .slider__author-profession {
     font-size: 18px;
     line-height: 34px;
   }
@@ -179,7 +179,7 @@
       position: absolute;
       width: 30px;
       height: 30px;
-      top: 161px;
+      top: 50%;
       background-color: transparent;
       opacity: 0.3;
       cursor: pointer;
@@ -196,12 +196,12 @@
 
     &--left {
       left: 16px;
-      transform: rotate(45deg);
+      transform: translateY(-20%) rotate(45deg);
     }
 
     &--right {
       left: 914px;
-      transform: rotate(225deg);
+      transform: translateY(-20%) rotate(225deg);
     }
   }
 }
