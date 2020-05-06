@@ -1,13 +1,17 @@
 .map {
   position: relative;
+  overflow: hidden;
   margin-top: -35px;
-  margin-bottom: 220px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 .map__image {
   position: absolute;
-  top: 0;
+  top: -445px;
   left: 0;
+  width: 320px;
+  height: 645px;
   z-index: 1;
 }
 
@@ -24,12 +28,15 @@
 @media (min-width: 660px) {
   .map {
     margin-top: -69px;
-    margin-bottom: 411px;
+    margin-bottom: 40px;
+    height: 371px;
   }
 
   .map__image {
-    width: 100%;
-    height: 375px;
+    top: -350px;
+    left: -20px;
+    width: 700px;
+    height: 848px;
   }
 
   .map__google {
@@ -43,12 +50,16 @@
 
 @media (min-width: 960px) {
   .map {
-    margin-top: -99px;
-    margin-bottom: 567px;
+    margin-top: -101px;
+    margin-bottom: 67px;
+    height: 500px
   }
 
   .map__image {
-    height: 500px;
+    top: -295px;
+    left: -120px;
+    width: 1200px;
+    height: 1002px;
   }
 
   .map__google {

@@ -8,22 +8,21 @@
     padding: 0;
   }
 
-  .copyright__logo {
+  .copyright__paragraf span {
     line-height: 18px;
     font-weight: normal;
     color: #283645;
-    text-decoration: none;
+  }
+
+  .copyright__logo {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 130px;
+    width: 40px;
   }
 
   .copyright__logo svg {
     position: absolute;
     top: -12px;
-    left: 97px;
+    left: 6px;
     fill: #d22856;
 
     &:hover,
@@ -34,5 +33,19 @@
     &:active {
       opacity: 0.3;
     }
+  }
+}
+
+@media (min-width: 960px) {
+  .copyright__paragraf {
+    padding-right: 40px;
+  }
+
+  .copyright__paragraf span {
+    font-size: 18px;
+  }
+
+  .copyright__logo svg {
+    left: 8px;
   }
 }
