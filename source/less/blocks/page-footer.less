@@ -5,6 +5,7 @@
 @media (min-width: 660px) {
   .page-footer {
     display: block;
+    margin-top: 40px;
   }
 
   .page-footer__wrapper {
@@ -16,13 +17,13 @@
     width: 150px;
     margin-right: 73px;
 
-    &:active {
+    &:active[href] {
       opacity: 0.3;
     }
   }
 
-  .page-footer__logo:hover path,
-  .page-footer__logo:focus path {
+  .page-footer__logo:hover[href] path,
+  .page-footer__logo:focus[href] path {
     fill: #d22856;
     cursor: pointer;
   }
@@ -41,6 +42,10 @@
 }
 
 @media (min-width: 960px) {
+  .page-footer {
+    margin-top: 70px;
+  }
+
   .page-footer__wrapper {
     justify-content: space-between;
   }
