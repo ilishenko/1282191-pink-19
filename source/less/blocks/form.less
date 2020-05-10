@@ -1,7 +1,6 @@
 .form {
   box-sizing: border-box;
   width: 320px;
-  margin: 0 auto;
   margin-top: 13px;
 }
 
@@ -9,7 +8,7 @@
 .form__personal {
   box-sizing: border-box;
   border: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -38,6 +37,7 @@
   width: 280px;
   height: 63px;
   padding-left: 20px;
+  padding-right: 20px;
   color: #283645;
   font-weight: normal;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -56,6 +56,7 @@
 }
 
 .form__wrapper--first {
+  margin: 0 auto;
   padding: 0;
   padding-top: 10px;
   background-color: #f2f2f2;
@@ -63,9 +64,13 @@
 
 .form__progress {
   border: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 6px;
+}
+
+.form__progress-wrapper {
+  padding: 0 20px;
 }
 
 .form__progress .form__name {
@@ -83,7 +88,7 @@
 }
 
 .form__progress .form__block {
-  padding-left: 89px;
+  padding-left: 69px;
   margin-bottom: 52px;
 
   &:last-child {
@@ -140,7 +145,7 @@
 
 .form__user-contact {
   border: none;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 20px;
 }
 
@@ -159,6 +164,7 @@
 }
 
 .form__wrapper--second {
+  margin: 0 auto;
   margin-top: 25px;
   padding: 0;
   padding-top: 37px;
@@ -168,7 +174,7 @@
 
 .form__app {
   border: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -238,12 +244,13 @@
 
 .form__post {
   border: none;
-  margin: 0;
+  margin: 0 auto;
   margin-top: 32px;
   padding: 0;
 }
 
 .form__name {
+  display: block;
   margin-top: 32px;
   margin-bottom: 10px;
   width: 320px;
@@ -261,6 +268,7 @@
   margin-left: 20px;
   padding-top: 14px;
   padding-left: 18px;
+  padding-right: 18px;
   border: 2px solid #e5e5e5;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -369,20 +377,19 @@
   .form__wrapper--first {
     order: 4;
     margin-top: 48px;
-    padding-left: 20px;
     background-color: #ffffff;
   }
 
   .form__progress {
     border: 2px solid #e5e5e5;
     width: 620px;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
     padding-top: 0;
     padding-bottom: 7px;
   }
 
   .form__progress .form__block {
-    padding-left: 117px;
+    padding-left: 97px;
   }
 
   .form__progress .form__name {
@@ -425,8 +432,31 @@
   }
 
   .form__user-contact label {
+    position: relative;
     padding-left: 19px;
     padding-top: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -61px;
+      right: 39px;
+      width: 59px;
+      height: 59px;
+      background-color: #e5e5e5;
+    }
+  }
+
+  .form__user-contact label[for="tel"]::after {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .form__user-contact label[for="email"]::after {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 
 
@@ -452,6 +482,7 @@
   .form__user-contact .form__input {
     width: 500px;
     padding-left: 18px;
+    padding-right: 70px;
   }
 
   .form__wrapper--second {
@@ -481,18 +512,24 @@
 
   .form__post {
     order: 5;
+    position: relative;
     border: 2px solid #e6e6e6;
     width: 620px;
     margin: 0 auto;
     margin-bottom: 23px;
     padding-left: 58px;
     padding-right: 58px;
-    padding-top: 22px;
+    padding-top: 46px;
     padding-bottom: 48px;
   }
 
   .form__post .form__name {
+    position: absolute;
     width: 265px;
+    margin: 0;
+    top: -17px;
+    left: 176px;
+    background-color: #ffffff;
   }
 
   .form__textarea {
@@ -553,6 +590,10 @@
     padding-bottom: 0;
   }
 
+  .form__user-contact label::after {
+    right: 2px;
+  }
+
   .form__user-contact .form__blocks {
     display: flex;
     justify-content: space-between;
@@ -576,26 +617,62 @@
 
   .form__progress {
     width: 940px;
-    margin-bottom: 52px;
+    margin-bottom: 66px;
     padding-bottom: 0;
   }
 
   .form__progress-wrapper {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 185px;
+    min-height: 186px;
     padding-right: 60px;
+    padding-left: 60px;
   }
 
   .form__progress .form__block {
-    margin-bottom: 38px;
+    margin-bottom: 25px;
+    padding-left: 59px;
+  }
+
+  .form__progress .form__block:nth-of-type(1) {
+    order: 1;
+    margin-right: 57px;
+  }
+
+  .form__progress .form__block:nth-of-type(3) {
+    order: 2;
+    margin-right: 55px;
+  }
+
+  .form__progress .form__block:nth-of-type(5) {
+    order: 3;
+    margin-right: 0;
+  }
+
+  .form__progress .form__block:nth-of-type(2) {
+    order: 4;
+    margin-right: 95px;
+  }
+
+  .form__progress .form__block:nth-of-type(4) {
+    order: 5;
+    margin-right: 65px;
+  }
+
+  .form__progress .form__block:nth-of-type(6) {
+    order: 6;
+    margin-right: 0;
   }
 
   .form__post {
     width: 940px;
-    padding-top: 18px;
+    margin-bottom: 64px;
+    padding-top: 42px;
     padding-bottom: 40px;
+  }
+
+  .form__post .form__name {
+    left: 336px;
   }
 
   .form__textarea {
@@ -607,10 +684,12 @@
 
   .form__button {
     margin-left: 0;
+    margin-top: 0;
   }
 
   .form__required {
-    margin-top: 60px;
+    margin-top: 18px;
+    margin-bottom: 16px;
     margin-left: 320px;
   }
 
