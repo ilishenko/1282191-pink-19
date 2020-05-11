@@ -151,7 +151,7 @@
       <p class="histori container">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!<span class="histori__write"> Пожалуйста, заполните форму ниже:</span>
       </p>
       <form class="form" action="index.html" method="post">
-        <fieldset class="form__personal">
+        <fieldset class="form__personal container">
           <legend class="visually-hidden">Персональные данные</legend>
 
           <p class="form__block">
@@ -170,42 +170,40 @@
           </p>
         </fieldset>
 
-        <div class="form__wrapper form__wrapper--first">
-          <fieldset class="form__progress">
-            <legend class="form__name">Ваши безбашенные<br> достежения в путешествии</legend>
-            <div class="form__progress-wrapper">
-              <p class="form__block">
-                <input class="form__btn visually-hidden" type="checkbox" name="selfie-shark" id="selfie-shark" checked>
-                <label class="form__mark" for="selfie-shark">Сделал селфи с акулой</label>
-              </p>
+        <fieldset class="form__progress">
+          <legend class="form__name">Ваши безбашенные<br> достежения в путешествии</legend>
+          <div class="form__progress-wrapper container">
+            <p class="form__block">
+              <input class="form__btn visually-hidden" type="checkbox" name="selfie-shark" id="selfie-shark" checked>
+              <label class="form__mark" for="selfie-shark">Сделал селфи с акулой</label>
+            </p>
 
-              <p class="form__block">
-                <input class="form__btn visually-hidden" type="checkbox" name="burn-beach" id="burn-beach" checked>
-                <label class="form__mark" for="burn-beach">Обгорел на пляже</label>
-              </p>
+            <p class="form__block">
+              <input class="form__btn visually-hidden" type="checkbox" name="burn-beach" id="burn-beach" checked>
+              <label class="form__mark" for="burn-beach">Обгорел на пляже</label>
+            </p>
 
-              <p class="form__block">
-                <input class="form__btn visually-hidden" type="checkbox" name="see-chack" id="see-chack">
-                <label class="form__mark" for="see-chack">Видел Чака Норриса</label>
-              </p>
+            <p class="form__block">
+              <input class="form__btn visually-hidden" type="checkbox" name="see-chack" id="see-chack">
+              <label class="form__mark" for="see-chack">Видел Чака Норриса</label>
+            </p>
 
-              <p class="form__block">
-                <input class="form__btn visually-hidden" type="checkbox" name="souvenir" id="souvenir">
-                <label class="form__mark" for="souvenir">Накупил сувениров</label>
-              </p>
+            <p class="form__block">
+              <input class="form__btn visually-hidden" type="checkbox" name="souvenir" id="souvenir">
+              <label class="form__mark" for="souvenir">Накупил сувениров</label>
+            </p>
 
-              <p class="form__block">
-                <input class="form__btn visually-hidden" type="checkbox" name="tower" id="tower" checked>
-                <label class="form__mark" for="tower">Удержал башню</label>
-              </p>
+            <p class="form__block">
+              <input class="form__btn visually-hidden" type="checkbox" name="tower" id="tower" checked>
+              <label class="form__mark" for="tower">Удержал башню</label>
+            </p>
 
-              <p class="form__block">
-                <input class="form__btn visually-hidden" type="checkbox" name="smash" id="smash">
-                <label class="form__mark" for="smash">Разгромил отель</label>
-              </p>
-            </div>
-          </fieldset>
-        </div>
+            <p class="form__block">
+              <input class="form__btn visually-hidden" type="checkbox" name="smash" id="smash">
+              <label class="form__mark" for="smash">Разгромил отель</label>
+            </p>
+          </div>
+        </fieldset>
 
         <fieldset class="form__user-contact container">
           <legend class="form__name">Контактная информация</legend>
@@ -222,9 +220,9 @@
           </div>
         </fieldset>
 
-        <div class="form__wrapper form__wrapper--second">
-          <fieldset class="form__app">
-            <legend>С каким приложением путешествовали?</legend>
+        <fieldset class="form__app">
+          <legend>С каким приложением путешествовали?</legend>
+          <div class="form__progress-wrapper container">
             <p class="form__block">
               <input class="form__btn visually-hidden" type="radio" name="app" id="app-ios" checked>
               <label class="form__mark" for="app-ios">Pink для iOS</label>
@@ -239,12 +237,12 @@
               <input class="form__btn visually-hidden" type="radio" name="app" id="app-windows">
               <label class="form__mark" for="app-windows">Windows Phone</label>
             </p>
-          </fieldset>
-        </div>
+          </div>
+        </fieldset>
 
-        <div class="form__post">
-          <label class="form__name">Опишите свои эмоции</label>
-          <textarea class="form__textarea" name="name" rows="6" cols="26">Можно прям в красках, не стесняясь в выражениях</textarea>
+        <div class="form__post container">
+          <label class="form__name" for="emotions">Опишите свои эмоции</label>
+          <textarea class="form__textarea" id="emotions" name="name" rows="6" cols="26">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
 
         <button class="form__button" type="submit">Отправить форму</button>
