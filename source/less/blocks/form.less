@@ -112,12 +112,12 @@
     border: 2px solid #e5e5e5;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     border: 2px solid #283645;
   }
 
-  &:active::before,
-  &:focus::before {
+  &:active::before {
     border: 2px solid #d22856;
   }
 }
@@ -217,12 +217,12 @@
     cursor: pointer;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus::before {
     border-color: #283645;
   }
 
-  &:active::before,
-  &:focus::before {
+  &:active::before {
     border-color: #d22856;
   }
 }
@@ -640,10 +640,11 @@
   .form__progress-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     width: 940px;
     min-height: 186px;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
 
   .form__progress .form__block {
@@ -653,32 +654,33 @@
 
   .form__progress .form__block:nth-of-type(1) {
     order: 1;
-    margin-right: 57px;
+    //margin-right: 57px;
   }
 
   .form__progress .form__block:nth-of-type(3) {
     order: 2;
-    margin-right: 55px;
+    //margin-right: 55px;
   }
 
   .form__progress .form__block:nth-of-type(5) {
     order: 3;
-    margin-right: 0;
+    //margin-right: 0;
   }
 
   .form__progress .form__block:nth-of-type(2) {
     order: 4;
-    margin-right: 95px;
+    margin-right: 40px;
+    margin-left: -10px;
   }
 
   .form__progress .form__block:nth-of-type(4) {
     order: 5;
-    margin-right: 65px;
+    //margin-right: 65px;
   }
 
   .form__progress .form__block:nth-of-type(6) {
     order: 6;
-    margin-right: 0;
+    //margin-right: 0;
   }
 
   .form__post {
