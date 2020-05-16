@@ -163,7 +163,7 @@
                 трансляцию в перескопе, задавайте свои вопросы!</p>
               <div class="gallery__likes">
                 <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-                <p class="gallery__count">Нравится:</p>
+                <p class="gallery__count">Нравится: 215</p>
               </div>
             </div>
           </li>
@@ -182,7 +182,7 @@
               <p class="gallery__post">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <div class="gallery__likes">
                 <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-                <p class="gallery__count">Нравится:</p>
+                <p class="gallery__count">Нравится: 356</p>
               </div>
             </div>
           </li>
@@ -201,7 +201,7 @@
               <p class="gallery__post">Соседи будут рады!</p>
               <div class="gallery__likes">
                 <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-                <p class="gallery__count">Нравится:</p>
+                <p class="gallery__count">Нравится: 666</p>
               </div>
             </div>
           </li>
@@ -220,7 +220,7 @@
               <p class="gallery__post">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <div class="gallery__likes">
                 <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-                <p class="gallery__count">Нравится:</p>
+                <p class="gallery__count">Нравится: 215</p>
               </div>
             </div>
           </li>
@@ -239,7 +239,7 @@
               <p class="gallery__post">Самая кубанская в мире!</p>
               <div class="gallery__likes">
                 <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-                <p class="gallery__count">Нравится:</p>
+                <p class="gallery__count">Нравится: 4</p>
               </div>
             </div>
           </li>
@@ -258,7 +258,7 @@
               <p class="gallery__post">Где снег-то?</p>
               <div class="gallery__likes">
                 <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-                <p class="gallery__count">Нравится:</p>
+                <p class="gallery__count">Нравится: 150</p>
               </div>
             </div>
           </li>
@@ -277,7 +277,7 @@
               <p class="gallery__post">Всем GM и взаимные лайки!</p>
               <div class="gallery__likes">
                 <button class="gallery__like" type="button"><span class="visually-hidden">Сердечко</span></button>
-                <p class="gallery__count">Нравится:</p>
+                <p class="gallery__count">Нравится: 2560</p>
               </div>
             </div>
           </li>
@@ -285,21 +285,22 @@
       </section>
 
       <section  class="new-post">
-        <p class="upload-photo container">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="new-post__photo container">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
 
-        <form class="new-post__form">
-          <legend class="visually-hidden">Новый пост!</legend>
-          <div class="new-post__wrapper container">
-            <div class="new-post__upload">
+        <form class="new-post__form post-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="post-form__wrapper container">
+            <div class="post-form__upload">
+              <h2 class="visually-hidden">Новое фото!</h2>
               <picture>
-                <img class="new-post__setup-user-pic" src="img/photo-road-mobile@1x.jpg" alt="Новая фотографии">
+                <img class="post-form__setup-user-pic" src="img/photo-road-mobile@1x.jpg" alt="Новая фотографии">
               </picture>
               <label class="visually-hidden" for="avatar">Загрузите фотографию</label>
-              <input class="new-post__input" type="file" name="avatar" id="avatar">
+              <input class="post-form__input" type="file" name="avatar" id="avatar">
             </div>
 
-            <div>
-              <div class="new-post__setings">
+            <div class="post-form__setings-wrapper">
+              <div class="post-form__setings">
+                <h2 class="visually-hidden">Новый пост!</h2>
                 <svg style="display: none;">
                   <symbol id="crop" viewBox="0 0 44 44">
                     <path fill="none" d="M0,0h48v48H0V0z"/>
@@ -318,36 +319,47 @@
                   </symbol>
                 </svg>
 
-                <div class="new-post__block-crop new-post__block-active">
-                  <svg width="48px" height="44px">
-                    <use class="new-post__setings-crop new-post__active" xlink:href="#crop"></use>
-                  </svg>
-                  <div class="new-post__range-controls">
-                    <div class="new-post__scale"></div>
-                    <div class="new-post__range-toggle"></div>
+                <div class="post-form__block post-form__block--crop post-form__block--active">
+                  <button class="post-form__button post-form__button--crop" type="button" name="button">
+                    <span class="visually-hidden">обрезать фото</span>
+                    <svg width="48px" height="44px">
+                      <use class="post-form__setings" xlink:href="#crop"></use>
+                    </svg>
+                  </button>
+                  <div class="post-form__range-controls">
+                    <div class="post-form__scale"></div>
+                    <div class="post-form__range-toggle"></div>
                   </div>
                 </div>
-                <div class="new-post__block-fill">
-                  <svg width="48px" height="44px">
-                    <use class="new-post__setings-fill" xlink:href="#fill"></use>
-                  </svg>
-                  <div class="new-post__range-controls">
-                    <div class="new-post__scale"></div>
-                    <div class="new-post__range-toggle"></div>
+
+                <div class="post-form__block post-form__block--fill">
+                  <button class="post-form__button post-form__button--fill" type="button" name="button">
+                    <span class="visually-hidden">контрастность</span>
+                    <svg width="48px" height="44px">
+                      <use class="post-form__setings" xlink:href="#fill"></use>
+                    </svg>
+                  </button>
+                  <div class="post-form__range-controls">
+                    <div class="post-form__scale"></div>
+                    <div class="post-form__range-toggle"></div>
                   </div>
                 </div>
-                <div class="new-post__block-contrast">
-                  <svg width="32px" height="32px">
-                    <use class="new-post__setings-contrast" xlink:href="#contrast"></use>
-                  </svg>
-                  <div class="new-post__range-controls">
-                    <div class="new-post__scale"></div>
-                    <div class="new-post__range-toggle"></div>
+
+                <div class="post-form__block post-form__block--contrast">
+                  <button class="post-form__button post-form__button--contrast" type="button" name="button">
+                    <span class="visually-hidden">яркость</span>
+                    <svg width="32px" height="32px">
+                      <use class="post-form__setings" xlink:href="#contrast"></use>
+                    </svg>
+                  </button>
+                  <div class="post-form__range-controls">
+                    <div class="post-form__scale"></div>
+                    <div class="post-form__range-toggle"></div>
                   </div>
                 </div>
               </div>
-              <button class="new-post__up" type="submit" name="button">Запостить</button>
-              <button class="new-post__off" type="button" name="button">Отмена</button>
+              <button class="post-form__up" type="submit" name="button"><span>Запостить</span></button>
+              <button class="post-form__off" type="button" name="button"><span>Отмена</span></button>
             </div>
           </div>
         </form>
@@ -426,5 +438,6 @@
       </div>
     </footer>
   <script src="js/menu.js"></script>
+  <script src="js/setings-foto.js"></script>
   </body>
 </html>
