@@ -168,7 +168,7 @@
     margin: 0;
     margin-left: 25px;
     margin-right: 165px;
-    padding: 17px 0;
+    padding: 0;
     widht: auto;
   }
 
@@ -176,7 +176,7 @@
     margin: 0;
     padding: 0;
     order: 2;
-    width: auto;
+    width: 120px;;
   }
 
   .gallery__item--winner .gallery__like {
@@ -189,14 +189,19 @@
 
   .gallery__item--winner .gallery__post {
     order: 3;
-    width: 535px;
+    width: 566px;
     padding: 0;
   }
 
   .gallery__item {
     width: 320px;
     margin: 0;
+    margin-bottom: 20px;
     padding: 0;
+
+    &:nth-of-type(1) {
+      margin-bottom: 50px;
+    }
   }
 
   .gallery__item--winner {
@@ -206,5 +211,23 @@
   .gallery__foto img {
     width: 100%;
     height: auto;
+  }
+
+  .gallery__likes {
+    justify-content: space-between;
+  }
+
+  .gallery__count {
+    order: 1;
+  }
+
+  .gallery__like {
+    order: 2;
+    margin: 0;
+  }
+
+  .gallery__wrapper {
+    padding-top: 22px;
+    padding-bottom: 24px;
   }
 }
