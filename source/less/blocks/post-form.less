@@ -1,4 +1,4 @@
-.post-form__form {
+.post-form {
   padding-top: 20px;
   padding-bottom: 41px;
   background-color: #f2f2f2;
@@ -7,7 +7,6 @@
 .post-form__wrapper {
   padding-top: 20px;
   padding-bottom: 41px;
-  background-color: #f2f2f2;
 }
 
 .post-form__upload {
@@ -107,6 +106,11 @@
   border-radius: 50%;
   border: 2px solid #d22856;
   background-color: #f2f2f2;
+  cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .post-form__block--fill .post-form__scale {
@@ -129,6 +133,11 @@
   border-radius: 50%;
   border: 2px solid #d22856;
   background-color: #f2f2f2;
+  cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .post-form__block--contrast .post-form__scale {
@@ -151,6 +160,11 @@
   border-radius: 50%;
   border: 2px solid #d22856;
   background-color: #f2f2f2;
+  cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .post-form__up,
@@ -178,10 +192,10 @@
     color: #ffffff;
     outline: none;
   }
-}
 
-.post-form__up:active span {
-  opacity: 0.3;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .post-form__off {

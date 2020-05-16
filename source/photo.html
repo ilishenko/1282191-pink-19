@@ -144,6 +144,7 @@
         <h1 class="gallery-title__photo container">Фотографии пользователей</h1>
       </div>
       <section class="gallery">
+        <h2 class="visually-hidden">Галерея</h2>
         <p class="gallery__show container">Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
         </p>
@@ -151,6 +152,8 @@
           <li class="gallery__item gallery__item--winner">
             <a class="gallery__foto" href="#">
               <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
                 <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография победителя">
               </picture>
             </a>
@@ -171,6 +174,8 @@
           <li class="gallery__item container">
             <a class="gallery__foto" href="#">
               <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
                 <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография автомобиля. Добавил Левон">
               </picture>
             </a>
@@ -190,6 +195,8 @@
           <li class="gallery__item container">
             <a class="gallery__foto" href="#">
               <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
                 <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография барабанов. Добавил Антон">
               </picture>
             </a>
@@ -209,6 +216,8 @@
           <li class="gallery__item container">
             <a class="gallery__foto" href="#">
               <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
                 <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография стеклянного хола. Добавил Борис">
               </picture>
             </a>
@@ -228,6 +237,8 @@
           <li class="gallery__item container">
             <a class="gallery__foto" href="#">
               <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
                 <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография Кубанской бахчи. Добавил Сергей">
               </picture>
             </a>
@@ -247,6 +258,8 @@
           <li class="gallery__item container">
             <a class="gallery__foto" href="#">
               <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
                 <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография гор летом. Добавил Максим">
               </picture>
             </a>
@@ -266,6 +279,8 @@
           <li class="gallery__item container">
             <a class="gallery__foto" href="#">
               <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
                 <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография рассвета через эллюминатор самолёта. Добавила Надежда">
               </picture>
             </a>
@@ -285,12 +300,12 @@
       </section>
 
       <section  class="new-post">
+        <h2 class="visually-hidden">Выложите новое фото!</h2>
         <p class="new-post__photo container">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
 
         <form class="new-post__form post-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="post-form__wrapper container">
             <div class="post-form__upload">
-              <h2 class="visually-hidden">Новое фото!</h2>
               <picture>
                 <img class="post-form__setup-user-pic" src="img/photo-road-mobile@1x.jpg" alt="Новая фотографии">
               </picture>
@@ -300,7 +315,6 @@
 
             <div class="post-form__setings-wrapper">
               <div class="post-form__setings">
-                <h2 class="visually-hidden">Новый пост!</h2>
                 <svg style="display: none;">
                   <symbol id="crop" viewBox="0 0 44 44">
                     <path fill="none" d="M0,0h48v48H0V0z"/>
@@ -358,8 +372,8 @@
                   </div>
                 </div>
               </div>
-              <button class="post-form__up" type="submit" name="button"><span>Запостить</span></button>
-              <button class="post-form__off" type="button" name="button"><span>Отмена</span></button>
+              <button class="post-form__up" type="submit" name="button">Запостить</button>
+              <button class="post-form__off" type="button" name="button">Отмена</button>
             </div>
           </div>
         </form>

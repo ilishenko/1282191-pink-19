@@ -26,7 +26,7 @@ toggleFill.addEventListener('click', function() {
 });
 
 toggleContrast.addEventListener('click', function() {
-  if (setingsFill.classList.contains('post-form__block--active')) {
+  if (setingsContrast.classList.contains('post-form__block--active')) {
     return;
   } else {
     setingsCrop.classList.remove('post-form__block--active');

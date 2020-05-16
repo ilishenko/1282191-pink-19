@@ -20,6 +20,11 @@
   margin-bottom: 20px;
 }
 
+.gallery__item--winner {
+  margin: 0 auto;
+  width: 320px;
+}
+
 .gallery__item--winner::before {
   content: "Панорама дня";
   position: absolute;
@@ -130,4 +135,76 @@
   font-weight: normal;
   text-transform: uppercase;
   color: #d22856;
+}
+
+@media (min-width: 660px) {
+  .gallery__show {
+    width: 496px;
+    margin-bottom: 76px;
+    font-size: 18px;
+  }
+
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 660px;
+  }
+
+  .gallery__item--winner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery__item--winner .gallery__wrapper {
+    width: 620px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery__item--winner .gallery__time {
+    order: 1;
+    margin: 0;
+    margin-left: 25px;
+    margin-right: 165px;
+    padding: 17px 0;
+    widht: auto;
+  }
+
+  .gallery__item--winner .gallery__likes {
+    margin: 0;
+    padding: 0;
+    order: 2;
+    width: auto;
+  }
+
+  .gallery__item--winner .gallery__like {
+    position: relative;
+
+    &::before {
+      left: 0;
+    }
+  }
+
+  .gallery__item--winner .gallery__post {
+    order: 3;
+    width: 535px;
+    padding: 0;
+  }
+
+  .gallery__item {
+    width: 320px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery__item--winner {
+    width: 660px;
+  }
+
+  .gallery__foto img {
+    width: 100%;
+    height: auto;
+  }
 }
