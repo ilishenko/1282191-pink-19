@@ -12,33 +12,12 @@
 }
 
 .gallery__list {
-  .reset_ul();
+  list-style: none;
 }
 
 .gallery__item {
   position: relative;
   margin-bottom: 20px;
-}
-
-.gallery__item--winner {
-  margin: 0 auto;
-  width: 320px;
-}
-
-.gallery__item--winner::before {
-  content: "Панорама дня";
-  position: absolute;
-  top: 0;
-  right: 20px;
-  width: 140px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  background-color: #d22856;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 11px;
-  padding-bottom: 12px;
 }
 
 .gallery__foto {
@@ -138,6 +117,10 @@
 }
 
 @media (min-width: 660px) {
+  .gallery {
+    margin-bottom: 45px;
+  }
+
   .gallery__show {
     width: 496px;
     margin-bottom: 76px;
@@ -151,61 +134,11 @@
     width: 660px;
   }
 
-  .gallery__item--winner img {
-    width: 100%;
-    height: auto;
-  }
-
-  .gallery__item--winner .gallery__wrapper {
-    width: 620px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .gallery__item--winner .gallery__time {
-    order: 1;
-    margin: 0;
-    margin-left: 25px;
-    margin-right: 165px;
-    padding: 0;
-    widht: auto;
-  }
-
-  .gallery__item--winner .gallery__likes {
-    margin: 0;
-    padding: 0;
-    order: 2;
-    width: 120px;;
-  }
-
-  .gallery__item--winner .gallery__like {
-    position: relative;
-
-    &::before {
-      left: 0;
-    }
-  }
-
-  .gallery__item--winner .gallery__post {
-    order: 3;
-    width: 566px;
-    padding: 0;
-  }
-
   .gallery__item {
-    width: 320px;
+    width: 300px;
     margin: 0;
     margin-bottom: 20px;
     padding: 0;
-
-    &:nth-of-type(1) {
-      margin-bottom: 50px;
-    }
-  }
-
-  .gallery__item--winner {
-    width: 660px;
   }
 
   .gallery__foto img {
@@ -215,6 +148,7 @@
 
   .gallery__likes {
     justify-content: space-between;
+    padding-bottom: 28px;
   }
 
   .gallery__count {
@@ -222,12 +156,41 @@
   }
 
   .gallery__like {
+    position: relative;
     order: 2;
     margin: 0;
+
+    &::before {
+      left: 0;
+    }
   }
 
   .gallery__wrapper {
-    padding-top: 22px;
-    padding-bottom: 24px;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 0;
+  }
+
+  .gallery__post {
+    min-height: 66px;
+  }
+}
+
+@media (min-width: 960px) {
+  .gallery {
+    margin-bottom: 5px;
+  }
+
+  .gallery__list {
+    width: 960px;
+  }
+
+  .gallery__show {
+    width: 600px;
+    margin-bottom: 90px;
+  }
+
+  .gallery__item {
+    margin-bottom: 54px;
   }
 }

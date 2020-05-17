@@ -1,6 +1,4 @@
 .post-form {
-  padding-top: 20px;
-  padding-bottom: 41px;
   background-color: #f2f2f2;
 }
 
@@ -226,9 +224,10 @@
   opacity: 0.3;
 }
 
-@media(min-width: 660px) {
+@media (min-width: 660px) {
   .post-form__wrapper {
-    padding-top: 36px;
+    padding-top: 57px;
+    padding-bottom: 54px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -237,6 +236,7 @@
   .post-form__upload {
     width: 300px;
     min-height: 400px;
+    margin-bottom: 0;
   }
 
   .post-form__setings-wrapper {
@@ -245,5 +245,207 @@
 
   .post-form__setings {
     flex-direction: column;
+    width: 274px;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin: 0;
+    margin-left: 24px;
+    margin-bottom: 67px;
+    fill: #d22856;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .post-form__block {
+    margin: 0;
+    border-bottom: 1px solid #dddfe0;
+    padding-bottom: 23px;
+  }
+
+  .post-form__block:not(:nth-of-type(1)) {
+    padding-top: 25px;
+  }
+
+  .post-form__block--fill {
+    padding-left: 4px;
+  }
+
+  .post-form__block--contrast {
+    padding-left: 8px;
+  }
+
+  .post-form__block--crop svg {
+    width: 29px;
+    height: 29px;
+    padding-top: 7px;
+  }
+
+  .post-form__block--fill svg {
+    width: 25px;
+    height: 23px;
+  }
+
+  .post-form__block--contrast svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .post-form__block--crop .post-form__scale {
+    width: 202px;
+    top: -13px;
+    left: 56px;
+  }
+
+  .post-form__block--crop .post-form__range-toggle {
+    top: -19px;
+    left: 201px;
+  }
+
+  .post-form__block--fill .post-form__scale {
+    width: 202px;
+    top: -15px;
+    left: 53px;
+  }
+
+  .post-form__block--fill .post-form__range-toggle {
+    top: -21px;
+    left: 77px;
+  }
+
+  .post-form__block--contrast .post-form__scale {
+    width: 202px;
+    top: -13px;
+    left: 48px;
+  }
+
+  .post-form__block--contrast .post-form__range-toggle {
+    top: -19px;
+    left: 143px;
+  }
+
+  .post-form__block--fill .post-form__scale,
+  .post-form__block--fill .post-form__range-toggle,
+  .post-form__block--contrast .post-form__scale,
+  .post-form__block--contrast .post-form__range-toggle {
+    display: block;
+  }
+
+  .post-form__up,
+  .post-form__off {
+    width: 261px;
+    margin-left: 26px;
+  }
+
+  .post-form__up {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 960px) {
+  .post-form {
+    background-color: #ffffff;
+  }
+
+  .post-form__wrapper {
+    width: 940px;
+    background-color: #f2f2f2;
+    padding-left: 80px;
+    padding-right: 20px;
+    padding-bottom: 57px;
+    justify-content: flex-start;
+  }
+
+  .post-form__upload {
+    margin-right: 86px;
+  }
+
+  .post-form__setings-wrapper {
+    width: 412px;
+  }
+
+  .post-form__setings {
+    margin-left: 0;
+    margin-bottom: 146px;
+    width: 410px;
+  }
+
+  .post-form__block--crop {
+    padding-bottom: 8px;
+  }
+
+  .post-form__block--crop svg {
+    width: 48px;
+    height: 44px;
+    padding-top: 0;
+  }
+
+  .post-form__block--crop .post-form__scale {
+    width: 288px;
+    top: -28px;
+    left: 96px;
+  }
+
+  .post-form__block--crop .post-form__range-toggle {
+    top: -34px;
+    left: 167px;
+  }
+
+  .post-form__block:not(:nth-of-type(1)) {
+    padding-top: 15px;
+  }
+
+  .post-form__block--fill {
+    padding-bottom: 10px;
+  }
+
+  .post-form__block--fill svg {
+    width: 48px;
+    height: 44px;
+  }
+
+  .post-form__block--fill .post-form__scale {
+    width: 288px;
+    top: -26px;
+    left: 92px;
+  }
+
+  .post-form__block--fill .post-form__range-toggle {
+    top: -32px;
+    left: 339px;
+  }
+
+  .post-form__block--contrast {
+    padding-left: 10px;
+    padding-bottom: 13px;
+  }
+
+  .post-form__block--contrast svg {
+    width: 32px;
+    height: 38px;
+  }
+
+  .post-form__block--contrast .post-form__scale {
+    width: 288px;
+    top: -23px;
+    left: 86px;
+  }
+
+  .post-form__block--contrast .post-form__range-toggle {
+    top: -29px;
+    left: 246px;
+  }
+
+  .post-form__up,
+  .post-form__off {
+    width: 183px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .post-form__up {
+    margin-left: 4px;
+    margin-right: 38px;
   }
 }
