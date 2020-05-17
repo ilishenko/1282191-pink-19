@@ -1,0 +1,724 @@
+.form {
+  box-sizing: border-box;
+  margin-top: 13px;
+}
+
+
+.form__personal {
+  box-sizing: border-box;
+  border: none;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+}
+
+.form__personal .form__block,
+.form__user-contact .form__block {
+  margin-bottom: 17px;
+}
+
+.form__personal label {
+  padding-left: 23px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: #d22856;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__personal .form__input,
+.form__user-contact .form__input {
+  margin: 0;
+  margin-top: 5px;
+  width: 280px;
+  height: 63px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #283645;
+  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  border: 2px solid #e5e5e5;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #d22856;
+  }
+}
+
+.form__progress {
+  position: relative;
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 18px;
+  padding: 0;
+  padding-top: 104px;
+  background-color: #f2f2f2;
+}
+
+.form__progress-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form__progress .form__name {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  color: #d22856;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__progress .form__block {
+  padding-left: 69px;
+  margin-bottom: 52px;
+
+  &:last-child {
+    margin-bottom: 46px;
+  }
+}
+
+.form__progress .form__mark {
+  position: relative;
+  color: #283645;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -69px;
+    width: 39px;
+    height: 39px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border: 2px solid #283645;
+  }
+
+  &:active::before {
+    border: 2px solid #d22856;
+  }
+}
+
+.form__btn:checked + .form__mark[for="selfie-shark"]::after,
+.form__btn:checked + .form__mark[for="burn-beach"]::after,
+.form__btn:checked + .form__mark[for="see-chack"]::after,
+.form__btn:checked + .form__mark[for="souvenir"]::after,
+.form__btn:checked + .form__mark[for="tower"]::after,
+.form__btn:checked + .form__mark[for="smash"]::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -59px;
+  width: 22px;
+  height: 10px;
+  border: 2px solid #d22856;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  transform: rotate(-45deg);
+}
+
+.form__user-contact {
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.form__user-contact label {
+  padding-left: 23px;
+  color: #d22856;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.form__user-contact .form__name {
+  display: none;
+}
+
+.form__app {
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2px;
+  padding-top: 73px;
+  background-color: #f2f2f2;
+}
+
+.form__app-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form__app legend {
+  display: block;
+  position: absolute;
+  top: 38px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 185px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 18px;
+  font-weight: normal;
+  color: #d22856;
+}
+
+.form__app .form__block {
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+
+.form__app .form__mark {
+  position: relative;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-left: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 39px;
+    height: 39px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
+}
+
+.form__btn:checked + .form__mark[for="app-ios"]::after,
+.form__btn:checked + .form__mark[for="app-android"]::after,
+.form__btn:checked + .form__mark[for="app-windows"]::after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 12px;
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  border-radius: 50%;
+}
+
+.form__post {
+  border: none;
+  margin: 0 auto;
+  margin-bottom: 46px;
+  padding: 0;
+}
+
+.form__name {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  width: 320px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #d22856;
+  text-align: center;
+}
+
+.form__textarea {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 14px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #283645;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #d22856;
+  }
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 280px;
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: #61b98f;
+  }
+
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+  }
+}
+
+.form__required {
+  margin-top: 35px;
+  font-weight: normal;
+  line-height: 30px;
+  color: #283645;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__required span {
+  color: #d22856;
+}
+
+.form__required-dop {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .form {
+    width: 660px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 87px;
+  }
+
+  .form__personal {
+    flex-grow: 1;
+    order: 1;
+    padding-bottom: 13px;
+  }
+
+  .form__personal label {
+    padding-left: 0;
+    padding-right: 19px;
+    padding-top: 6px;
+  }
+
+  .form__personal .form__input {
+    width: 100%;
+    height: 62px;
+    flex-grow: 1;
+    margin-top: 0;
+  }
+
+  .form__personal .form__block {
+    display: flex;
+    margin-bottom: 53px;
+    max-height: 65px;
+    align-items: center;
+
+    &:nth-of-type(3) {
+      margin-bottom: 45px;
+    }
+  }
+
+  .form__progress {
+    order: 4;
+    border: 2px solid #e5e5e5;
+    width: 620px;
+    margin-bottom: 65px;
+    padding-top: 0;
+    padding-bottom: 7px;
+    background-color: #ffffff;
+  }
+
+  .form__progress-wrapper {
+    width: 620px;
+  }
+
+  .form__progress .form__block {
+    padding-left: 97px;
+  }
+
+  .form__progress .form__name {
+    position: static;
+    transform: translateX(0);
+    padding-top: 0;
+    margin-bottom: 33px;
+    width: 432px;
+  }
+
+  .form__progress br {
+    display: none;
+  }
+
+  .form__progress .form__mark {
+    &::before {
+      left: -59px;
+    }
+  }
+
+  .form__btn:checked + .form__mark[for="selfie-shark"]::after,
+  .form__btn:checked + .form__mark[for="burn-beach"]::after,
+  .form__btn:checked + .form__mark[for="see-chack"]::after,
+  .form__btn:checked + .form__mark[for="souvenir"]::after,
+  .form__btn:checked + .form__mark[for="tower"]::after,
+  .form__btn:checked + .form__mark[for="smash"]::after {
+    left: -50px;
+  }
+
+  .form__user-contact {
+    order: 3;
+    width: 660px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 56px;
+    margin-bottom: 56px;
+    border: 2px solid #e6e6e6;
+    display: flex;
+    flex-grow: 1;
+    padding: 0;
+    padding-top: 22px;
+    padding-bottom: 2px;
+  }
+
+  .form__user-contact label {
+    position: relative;
+    padding-left: 19px;
+    padding-top: 10px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -61px;
+      right: 2px;
+      width: 59px;
+      height: 59px;
+      background-color: #e5e5e5;
+    }
+  }
+
+  .form__user-contact label[for="tel"]::after {
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .form__user-contact label[for="email"]::after {
+    background-image: url("../img/icon-mail.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+
+  .form__user-contact .form__name {
+    display: block;
+    width: 260px;
+    text-align: center;
+    font-family: "Open Sans", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #d22856;
+  }
+
+  .form__user-contact .form__blocks {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .form__user-contact .form__block {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .form__user-contact .form__input {
+    width: 500px;
+    padding-left: 18px;
+    padding-right: 70px;
+  }
+
+  .form__app {
+    order: 2;
+    width: 620px;
+    margin: 0 auto;
+    border: 2px solid #e5e5e5;
+    padding-top: 8px;
+    padding-bottom: 14px;
+    background-color: #ffffff;
+  }
+
+  .form__app-wrapper {
+    width: 620px;
+    padding: 0 57px;
+  }
+
+  .form__app legend {
+    width: 368px;
+    transform: translateX(0);
+    position: static;
+  }
+
+  .form__app .form__mark {
+    padding-left: 60px;
+  }
+
+  .form__post {
+    order: 5;
+    position: relative;
+    border: 2px solid #e6e6e6;
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 67px;
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 46px;
+    padding-bottom: 50px;
+  }
+
+  .form__post .form__name {
+    position: absolute;
+    width: 265px;
+    margin: 0;
+    top: -17px;
+    left: 176px;
+    background-color: #ffffff;
+  }
+
+  .form__textarea {
+    width: 500px;
+    height: 193px;
+    margin-left: 0;
+    padding-top: 14px;
+    padding-left: 18px;
+    font-size: 18px;
+  }
+
+  .form__button {
+    order: 6;
+    width: 300px;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 133px;
+  }
+
+  .form__required {
+    order: 7;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .form {
+    width: 960px;
+    margin-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .form__personal {
+    width: 440px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 56px;
+  }
+
+  .form__personal .form__input {
+    height: 63px;
+  }
+
+  .form__personal .form__block {
+    width: 436px;
+    margin-top: 12px;
+  }
+
+  .form__personal .form__block:last-child {
+    margin-bottom: 0;
+  }
+
+  .form__app {
+    width: 433px;
+    padding-top: 9px;
+    padding-bottom: 0;
+    margin-bottom: 56px;
+  }
+
+  .form__app-wrapper {
+    width: 433px;
+    padding: 0 72px;
+  }
+
+  .form__user-contact {
+    margin: 0;
+    margin-bottom: 57px;
+    padding: 0;
+    padding-top: 18px;
+  }
+
+  .form__user-contact label::after {
+    right: 2px;
+  }
+
+  .form__user-contact .form__blocks {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 820px;
+    margin: 0 auto;
+  }
+
+  .form__user-contact .form__block {
+    margin-bottom: 13px;
+  }
+
+  .form__user-contact .form__input {
+    width: 375px;
+  }
+
+  .form__progress {
+    width: 940px;
+    margin-bottom: 66px;
+    padding-bottom: 0;
+  }
+
+  .form__progress-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 940px;
+    min-height: 186px;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .form__progress .form__block {
+    margin-bottom: 25px;
+    padding-left: 59px;
+  }
+
+  .form__progress .form__block:nth-of-type(1) {
+    order: 1;
+    //margin-right: 57px;
+  }
+
+  .form__progress .form__block:nth-of-type(3) {
+    order: 2;
+    //margin-right: 55px;
+  }
+
+  .form__progress .form__block:nth-of-type(5) {
+    order: 3;
+    //margin-right: 0;
+  }
+
+  .form__progress .form__block:nth-of-type(2) {
+    order: 4;
+    margin-right: 40px;
+    margin-left: -10px;
+  }
+
+  .form__progress .form__block:nth-of-type(4) {
+    order: 5;
+    //margin-right: 65px;
+  }
+
+  .form__progress .form__block:nth-of-type(6) {
+    order: 6;
+    //margin-right: 0;
+  }
+
+  .form__post {
+    width: 940px;
+    margin-bottom: 64px;
+    padding-top: 42px;
+    padding-bottom: 44px;
+  }
+
+  .form__post .form__name {
+    left: 336px;
+  }
+
+  .form__textarea {
+    width: 820px;
+    height: 128px;
+    margin-left: 0;
+    padding-top: 14px;
+  }
+
+  .form__button {
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 322px;
+  }
+
+  .form__required {
+    margin-top: 18px;
+    margin-bottom: 16px;
+  }
+
+  .form__required .form__required-dop {
+    display: inline;
+    margin-top: 35px;
+    font-weight: normal;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #283645;
+  }
+}
