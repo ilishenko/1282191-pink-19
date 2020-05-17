@@ -151,6 +151,7 @@
         </p>
 
         <article class="gallery__panorama panorama">
+          <h2 class="panorama__title">Панорама дня</h2>
           <a class="panorama__foto" href="#">
             <picture>
               <source media="(min-width: 960px)" srcset="img/panorama-desktop_1.jpg">
@@ -341,7 +342,7 @@
                   <button class="post-form__button post-form__button--crop" type="button" name="button">
                     <span class="visually-hidden">обрезать фото</span>
                     <svg width="48px" height="44px">
-                      <use class="post-form__setings" xlink:href="#crop"></use>
+                      <use class="post-form__svg-active" xlink:href="#crop"></use>
                     </svg>
                   </button>
                   <div class="post-form__range-controls">
@@ -354,7 +355,7 @@
                   <button class="post-form__button post-form__button--fill" type="button" name="button">
                     <span class="visually-hidden">контрастность</span>
                     <svg width="48px" height="44px">
-                      <use class="post-form__setings" xlink:href="#fill"></use>
+                      <use class="post-form__svg-active" xlink:href="#fill"></use>
                     </svg>
                   </button>
                   <div class="post-form__range-controls">
@@ -367,7 +368,7 @@
                   <button class="post-form__button post-form__button--contrast" type="button" name="button">
                     <span class="visually-hidden">яркость</span>
                     <svg width="32px" height="32px">
-                      <use class="post-form__setings" xlink:href="#contrast"></use>
+                      <use class="post-form__svg-active" xlink:href="#contrast"></use>
                     </svg>
                   </button>
                   <div class="post-form__range-controls">
@@ -376,8 +377,8 @@
                   </div>
                 </div>
               </div>
-              <button class="post-form__up" type="submit" name="button">Запостить</button>
-              <button class="post-form__off" type="button" name="button">Отмена</button>
+              <button class="post-form__up" type="submit">Запостить</button>
+              <button class="post-form__off" type="button">Отмена</button>
             </div>
           </div>
         </form>
