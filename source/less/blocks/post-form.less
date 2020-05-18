@@ -37,10 +37,11 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  width: 216px;
+  width: 240px;
   margin: 0 auto;
   margin-bottom: 38px;
   padding-right: 13px;
+  padding-left: 13px;
   padding-bottom: 73px;
   justify-content: space-between;
   fill: #b5b9be;
@@ -95,89 +96,54 @@
   fill: #d22856;
 }
 
-.post-form__range-controls {
-  position: relative;
+.post-form__block--active .post-form__range-controls {
+  display: block;
 }
 
-.post-form__block--crop .post-form__scale {
-  display: block;
+.post-form__range-controls {
+  display: none;
   position: absolute;
-  top: 38px;
-  left: -13px;
+  width: 240px;
+  height: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+}
+
+.post-form__scale {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 240px;
   height: 2px;
   background-color: #283645;
+}
+
+.post-form__range-toggle {
+  position: absolute;
+  top: -6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #d22856;
+  background-color: #f2f2f2;
+  cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .post-form__block--crop .post-form__range-toggle {
-  display: block;
-  position: absolute;
-  top: 32px;
-  left: 180px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 2px solid #d22856;
-  background-color: #f2f2f2;
-  cursor: pointer;
-
-  &:active {
-    background-color: #d22856;
-  }
-}
-
-.post-form__block--fill .post-form__scale {
-  display: none;
-  position: absolute;
-  top: 36px;
-  left: -98px;
-  width: 240px;
-  height: 2px;
-  background-color: #283645;
+  left: 79.5%;
 }
 
 .post-form__block--fill .post-form__range-toggle {
-  display: none;
-  position: absolute;
-  top: 30px;
-  left: 95px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 2px solid #d22856;
-  background-color: #f2f2f2;
-  cursor: pointer;
-
-  &:active {
-    background-color: #d22856;
-  }
-}
-
-.post-form__block--contrast .post-form__scale {
-  display: none;
-  position: absolute;
-  top: 42px;
-  left: -185px;
-  width: 240px;
-  height: 2px;
-  background-color: #283645;
+  left: 87.5%;
 }
 
 .post-form__block--contrast .post-form__range-toggle {
-  display: none;
-  position: absolute;
-  top: 36px;
-  left: 8px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  border: 2px solid #d22856;
-  background-color: #f2f2f2;
-  cursor: pointer;
-
-  &:active {
-    background-color: #d22856;
-  }
+  left: 51.5%;
 }
 
 .post-form__up,
@@ -185,6 +151,8 @@
   margin: 0 auto;
   padding-top: 14px;
   padding-bottom: 17px;
+  padding-left: 10px;
+  padding-right: 10px;
   width: 280px;
   border: 3px solid;
   border-radius: 27px;
@@ -254,11 +222,11 @@
 
   .post-form__setings {
     flex-direction: column;
-    width: 274px;
+    width: 290px;
     padding-right: 0;
     padding-bottom: 0;
     margin: 0;
-    margin-left: 24px;
+    margin-left: 11px;
     margin-bottom: 67px;
     fill: #d22856;
 
@@ -270,7 +238,21 @@
   .post-form__block {
     margin: 0;
     border-bottom: 1px solid #dddfe0;
-    padding-bottom: 23px;
+    padding-bottom: 8px;
+  }
+
+  .post-form__range-controls {
+    display: block;
+    position: relative;
+    transform: translateX(0);
+    left: 50px;
+    width: 200px;
+  }
+
+  .post-form__scale {
+    width: 200px;
+    top: 7px;
+    left: 6px;
   }
 
   .post-form__block:not(:nth-of-type(1)) {
@@ -286,9 +268,9 @@
   }
 
   .post-form__block--crop svg {
-    width: 29px;
-    height: 29px;
-    padding-top: 7px;
+    width: 30px;
+    height: 30px;
+    padding-top: 8px;
   }
 
   .post-form__block--fill svg {
@@ -301,44 +283,25 @@
     height: 16px;
   }
 
-  .post-form__block--crop .post-form__scale {
-    width: 202px;
-    top: -13px;
-    left: 56px;
+  .post-form__range-toggle {
+    top: 1px;
   }
 
   .post-form__block--crop .post-form__range-toggle {
-    top: -19px;
-    left: 201px;
+    left: 77%;
   }
 
-  .post-form__block--fill .post-form__scale {
-    width: 202px;
-    top: -15px;
-    left: 53px;
+  .post-form__button--fill .post-form__scale {
+    top: 3px;
+    left: 2px;
   }
 
   .post-form__block--fill .post-form__range-toggle {
-    top: -21px;
-    left: 77px;
-  }
-
-  .post-form__block--contrast .post-form__scale {
-    width: 202px;
-    top: -13px;
-    left: 48px;
+    left: 14%;
   }
 
   .post-form__block--contrast .post-form__range-toggle {
-    top: -19px;
-    left: 143px;
-  }
-
-  .post-form__block--fill .post-form__scale,
-  .post-form__block--fill .post-form__range-toggle,
-  .post-form__block--contrast .post-form__scale,
-  .post-form__block--contrast .post-form__range-toggle {
-    display: block;
+    left: 48%;
   }
 
   .post-form__up,
@@ -377,11 +340,23 @@
   .post-form__setings {
     margin-left: 0;
     margin-bottom: 146px;
+    padding-left: 0;
     width: 410px;
   }
 
+  .post-form__range-controls {
+    width: 290px;
+    left: 93px;
+    top: -32px;
+  }
+
+  .post-form__scale {
+    width: 290px;
+  }
+
   .post-form__block--crop {
-    padding-bottom: 8px;
+    padding-bottom: 0;
+    margin-top: -5px;
   }
 
   .post-form__block--crop svg {
@@ -390,39 +365,18 @@
     padding-top: 0;
   }
 
-  .post-form__block--crop .post-form__scale {
-    width: 288px;
-    top: -28px;
-    left: 96px;
-  }
-
-  .post-form__block--crop .post-form__range-toggle {
-    top: -34px;
-    left: 167px;
-  }
-
   .post-form__block:not(:nth-of-type(1)) {
-    padding-top: 15px;
+    padding-top: 11px;
+    padding-bottom: 0;
   }
 
   .post-form__block--fill {
-    padding-bottom: 10px;
+    padding-bottom: 0;
   }
 
   .post-form__block--fill svg {
     width: 48px;
     height: 44px;
-  }
-
-  .post-form__block--fill .post-form__scale {
-    width: 288px;
-    top: -26px;
-    left: 92px;
-  }
-
-  .post-form__block--fill .post-form__range-toggle {
-    top: -32px;
-    left: 339px;
   }
 
   .post-form__block--contrast {
@@ -435,15 +389,23 @@
     height: 38px;
   }
 
-  .post-form__block--contrast .post-form__scale {
-    width: 288px;
-    top: -23px;
-    left: 86px;
+  .post-form__block--crop .post-form__range-toggle {
+    left: 25%;
   }
 
-  .post-form__block--contrast .post-form__range-toggle {
-    top: -29px;
-    left: 246px;
+  .post-form__block--fill .post-form__scale {
+    top: 5px;
+    left: 0;
+  }
+
+  .post-form__block--fill .post-form__range-toggle {
+    left: 85%;
+    top: -1px;
+  }
+
+  .post-form__block--contrast .post-form__scale {
+    top: 8px;
+    left: -6px;
   }
 
   .post-form__up,
