@@ -43,7 +43,6 @@
   padding-right: 13px;
   padding-left: 13px;
   padding-bottom: 73px;
-  justify-content: space-between;
   fill: #b5b9be;
 
   &::after {
@@ -83,9 +82,20 @@
   outline: none;
 }
 
+.post-form__block {
+  margin-right: 34px;
+
+  &:nth-of-type(2) {
+    margin-right: 40px;
+  }
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+}
+
 .post-form__block--fill {
   margin-top: 2px;
-  margin-right: 6px;
 }
 
 .post-form__block--contrast {
@@ -239,6 +249,16 @@
     margin: 0;
     border-bottom: 1px solid #dddfe0;
     padding-bottom: 8px;
+  }
+
+  .post-form__button--crop:hover svg,
+  .post-form__button--crop:focus svg,
+  .post-form__button--fill:hover svg,
+  .post-form__button--fill:focus svg,
+  .post-form__button--contrast:hover svg,
+  .post-form__button--contrast:focus svg {
+    fill: #d22856;
+    outline: 2px solid #d22856;
   }
 
   .post-form__range-controls {

@@ -111,16 +111,17 @@
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
   }
-
-  &:hover::before,
-  &:focus::before {
-    border: 2px solid #283645;
-  }
-
-  &:active::before {
-    border: 2px solid #d22856;
-  }
 }
+
+.form__progress .form__btn:hover + label::before,
+.form__progress .form__btn:focus + label::before {
+  border: 2px solid #283645;
+}
+
+.form__progress .form__btn:active + label::before {
+  border: 2px solid #d22856;
+}
+
 
 .form__btn:checked + .form__mark[for="selfie-shark"]::after,
 .form__btn:checked + .form__mark[for="burn-beach"]::after,
@@ -216,15 +217,15 @@
     background-color: #ffffff;
     cursor: pointer;
   }
+}
 
-  &:hover::before,
-  &:focus::before {
-    border-color: #283645;
-  }
+.form__app .form__btn:hover + label::before,
+.form__app .form__btn:focus + label::before {
+  border: 2px solid #283645;
+}
 
-  &:active::before {
-    border-color: #d22856;
-  }
+.form__app .form__btn:active + label::before {
+  border: 2px solid #d22856;
 }
 
 .form__btn:checked + .form__mark[for="app-ios"]::after,
