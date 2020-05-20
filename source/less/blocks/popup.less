@@ -48,16 +48,12 @@
   padding-bottom: 16px;
 }
 
-.popup--good--show {
+.popup--show {
   display: block;
   position: fixed;
   top: 50px;
-}
-
-.popup--error--show {
-  display: block;
-  position: fixed;
-  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 @media (min-width: 660px) {
@@ -91,14 +87,6 @@
   .popup__button {
     width: 300px;
   }
-
-  .popup--good--show {
-    left: 100px;
-  }
-
-  .popup--error--show {
-    left: 100px;
-  }
 }
 
 @media (min-width: 960px) {
@@ -125,13 +113,5 @@
 
   .popup--good .popup__button {
     width: 460px;
-  }
-
-  .popup--good--show {
-    left: 90px;
-  }
-
-  .popup--error--show {
-    left: 90px;
   }
 }

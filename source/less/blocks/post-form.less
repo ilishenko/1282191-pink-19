@@ -164,6 +164,7 @@
   padding-left: 10px;
   padding-right: 10px;
   width: 280px;
+  background-color: transparent;
   border: 3px solid;
   border-radius: 27px;
   font-size: 18px;
@@ -258,7 +259,18 @@
   .post-form__button--contrast:hover svg,
   .post-form__button--contrast:focus svg {
     fill: #d22856;
+  }
+
+  .post-form__button--crop:focus svg,
+  .post-form__button--fill:focus svg,
+  .post-form__button--contrast:focus svg {
     outline: 2px solid #d22856;
+  }
+
+  .post-form__button--crop:active svg,
+  .post-form__button--fill:active svg,
+  .post-form__button--contrast:active svg {
+    outline: 2px solid #f2f2f2;
   }
 
   .post-form__range-controls {
@@ -392,6 +404,10 @@
 
   .post-form__block--fill {
     padding-bottom: 0;
+  }
+
+  .post-form__block:nth-of-type(2) {
+    margin-right: 0;
   }
 
   .post-form__block--fill svg {
