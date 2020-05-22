@@ -5,6 +5,10 @@
   background-repeat: no-repeat, no-repeat;
   background-position: 0 178px, 50% 1%;
   background-size: 258px 286px, 100% 461px;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .download__access {
@@ -27,8 +31,12 @@
     margin-top: -108px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: -18px 99.8%, 52% 0%;
+    background-position: -18px 99.8%, 50% 0%;
     background-size: 700px auto, 1200px 729px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .download__access {
@@ -50,8 +58,12 @@
     min-height: 853px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 100% 211px, -800px 2%;
+    background-position: 100% 211px, 50% 2%;
     background-size: 830px auto, 2560px auto;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .download__access {

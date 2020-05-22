@@ -5,68 +5,16 @@
     <title>HTML Academy: Пинк, главная страница</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <!--<picture>
-            <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" widht="74.426" height="22.859" alt="Логотип Пинк">
-          </picture>-->
           <svg style="display:none;">
-            <style>
-                .page-header__logo svg {
-                  width: 95px;
-                  height: 43px;
-                  padding-top: 20px;
-                  padding-left: 20px;
-                }
-
-                .page-header__logo-tablet {
-                  display: none;
-                }
-
-                .page-header__logo-desktop {
-                  display: none;
-                }
-
-                @media (min-width: 660px) {
-                  .page-header__logo svg {
-                    width: 147px;
-                    height: 43px;
-                    padding-top: 0;
-                    padding-left: 0;
-                  }
-
-                  .page-header__logo-mobile {
-                    display: none;
-                  }
-
-                  .page-header__logo-tablet {
-                    display: block;
-                  }
-
-                  .page-header__logo-desktop {
-                    display: none;
-                  }
-                }
-
-                @media (min-width: 960px) {
-                  .page-header__logo-mobile {
-                    display: none;
-                  }
-
-                  .page-header__logo-tablet {
-                    display: none;
-                  }
-
-                  .page-header__logo-desktop {
-                    display: block;
-                  }
-                }
-            </style>
             <symbol id="page-header__logo-mobile"  viewBox="0 0 74.426 22.859">
               <g>
                 <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -136,7 +84,7 @@
                 <a>Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a href="#"><span class="site-list__item__upper">Html</span> Academy</a>
+                <a href="https://htmlacademy.ru/intensive/adaptive"><span class="site-list__item__upper">Html</span> Academy</a>
               </li>
             </ul>
           </div>
@@ -171,7 +119,7 @@
         </fieldset>
 
         <fieldset class="form__progress">
-          <legend class="form__name">Ваши безбашенные достежения в путешествии</legend>
+          <legend class="form__name">Ваши безбашенные достижения в путешествии</legend>
           <div class="form__progress-wrapper">
             <p class="form__block">
               <input class="form__btn visually-hidden" type="checkbox" name="selfie-shark" id="selfie-shark" checked>
@@ -321,19 +269,21 @@
         </div>
       </div>
     </footer>
-    <section class="popup popup__good">
-      <h2 class="popup__title container">Ваша заявка отправлена</h2>
-      <p class="popup__message container">Спасибо за ваше участие, ваша заявка уже поступила к нам.
-        В ближайшее время<br>мы рассмотрим её и<br>оповестим вас.</p>
+    <section class="popup popup--good">
+      <h2 class="popup__title">Ваша заявка отправлена</h2>
+      <p class="popup__message">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+        В ближайшее время мы рассмотрим её и<br> оповестим вас.</p>
       <div class="popup__wrapper">
-        <button class="popup__button popup__button-good button container" type="button" name="button">Закрыть окно</button>
+        <button class="popup__button popup__button--good button" type="button" name="button">Закрыть окно</button>
       </div>
     </section>
 
-    <section class="popup popup__error container">
+    <section class="popup popup--error">
       <h2 class="popup__title">Что-то пошло не так!</h2>
       <p class="popup__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="popup__button popup__button-error button" type="button" name="button">Ок</button>
+      <div class="popup__wrapper">
+        <button class="popup__button popup__button--error button" type="button" name="button">Ок</button>
+      </div>
     </section>
   <script src="js/menu.js"></script>
   <script src="js/popup.js"></script>

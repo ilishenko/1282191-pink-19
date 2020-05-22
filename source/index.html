@@ -5,63 +5,16 @@
     <title>HTML Academy: Пинк, главная страница</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
           <svg style="display:none;">
-            <style>
-                .page-header__logo svg {
-                  width: 95px;
-                  height: 43px;
-                  padding-top: 20px;
-                  padding-left: 20px;
-                }
-
-                .page-header__logo-tablet {
-                  display: none;
-                }
-
-                .page-header__logo-desktop {
-                  display: none;
-                }
-
-                @media (min-width: 660px) {
-                  .page-header__logo svg {
-                    width: 147px;
-                    height: 43px;
-                    padding-top: 0;
-                    padding-left: 0;
-                  }
-
-                  .page-header__logo-mobile {
-                    display: none;
-                  }
-
-                  .page-header__logo-tablet {
-                    display: block;
-                  }
-
-                  .page-header__logo-desktop {
-                    display: none;
-                  }
-                }
-
-                @media (min-width: 960px) {
-                  .page-header__logo-mobile {
-                    display: none;
-                  }
-
-                  .page-header__logo-tablet {
-                    display: none;
-                  }
-
-                  .page-header__logo-desktop {
-                    display: block;
-                  }
-                }
-            </style>
             <symbol id="page-header__logo-mobile"  viewBox="0 0 74.426 22.859">
               <g>
                 <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -147,9 +100,9 @@
           <p class="download__paragraf">Взгляните на жизнь иначе!</p>
           <a class="download__button button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
           <ul class="download__icon icon-list">
-            <li class="icon-list__item icon-list--ios"><a href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">Иконка ios</span></a></li>
-            <li class="icon-list__item icon-list--android"><a href="https://www.android.com/"><span class="visually-hidden">Иконка Android</span></a></li>
-            <li class="icon-list__item icon-list--windows"><a href="https://www.microsoft.com/en-us/store/apps/windows"><span class="visually-hidden">Иконка Windows</span></a></li>
+            <li class="icon-list__item icon-list__item--ios"><a href="https://www.apple.com/ru/ios/app-store/"><span class="visually-hidden">Иконка ios</span></a></li>
+            <li class="icon-list__item icon-list__item--android"><a href="https://www.android.com/"><span class="visually-hidden">Иконка Android</span></a></li>
+            <li class="icon-list__item icon-list__item--windows"><a href="https://www.microsoft.com/en-us/store/apps/windows"><span class="visually-hidden">Иконка Windows</span></a></li>
           </ul>
           <p class="download__access">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
@@ -211,8 +164,8 @@
               </div>
             </li>
           </ul>
-          <button class="slider__toggle--left" type="button" name="left"><span class="visually-hidden">4</span></button>
-          <button class="slider__toggle--right" type="button" name="right"><span class="visually-hidden">5</span></button>
+          <button class="slider__toggle slider__toggle--left" type="button" name="left"><span class="visually-hidden">4</span></button>
+          <button class="slider__toggle slider__toggle--right" type="button" name="right"><span class="visually-hidden">5</span></button>
           <p class="reviews__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--active" type="button"><span class="visually-hidden">1</span></button>
             <button class="slider__toggle" type="button"><span class="visually-hidden">2</span></button>
@@ -309,9 +262,9 @@
       <section  class="map">
         <h2 class="visually-hidden">Карта местонахождения</h2>
         <picture>
-          <source media="(min-width: 960px)" srcset="img/bg-map-desktop_1x.jpg">
-          <source media="(min-width: 660px)" srcset="img/bg-map-tablet_1x.jpg">
-          <img class="map__image" src="img/bg-map-mobile_1x.png" width="320" height="200" alt="Карта адреса Пинк">
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="map__image" src="img/bg-map-mobile_1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="200" alt="Карта адреса Пинк">
         </picture>
         <iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6059930518893!2d30.321269608937822!3d59.93896839959574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585410296204!5m2!1sru!2sru" width="320" height="200" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </section>

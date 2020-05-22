@@ -111,16 +111,17 @@
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
   }
-
-  &:hover::before,
-  &:focus::before {
-    border: 2px solid #283645;
-  }
-
-  &:active::before {
-    border: 2px solid #d22856;
-  }
 }
+
+.form__progress .form__btn:hover + label::before,
+.form__progress .form__btn:focus + label::before {
+  border: 2px solid #283645;
+}
+
+.form__progress .form__btn:active + label::before {
+  border: 2px solid #d22856;
+}
+
 
 .form__btn:checked + .form__mark[for="selfie-shark"]::after,
 .form__btn:checked + .form__mark[for="burn-beach"]::after,
@@ -216,15 +217,15 @@
     background-color: #ffffff;
     cursor: pointer;
   }
+}
 
-  &:hover::before,
-  &:focus::before {
-    border-color: #283645;
-  }
+.form__app .form__btn:hover + label::before,
+.form__app .form__btn:focus + label::before {
+  border: 2px solid #283645;
+}
 
-  &:active::before {
-    border-color: #d22856;
-  }
+.form__app .form__btn:active + label::before {
+  border: 2px solid #d22856;
 }
 
 .form__btn:checked + .form__mark[for="app-ios"]::after,
@@ -426,8 +427,8 @@
     margin-top: 56px;
     margin-bottom: 56px;
     border: 2px solid #e6e6e6;
-    display: flex;
-    flex-grow: 1;
+    //display: flex;
+    //flex-grow: 1;
     padding: 0;
     padding-top: 22px;
     padding-bottom: 2px;
@@ -605,10 +606,16 @@
   }
 
   .form__user-contact {
+    width: 940px;
     margin: 0;
     margin-bottom: 57px;
     padding: 0;
     padding-top: 18px;
+  }
+
+  .form__user-contact .form__name {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .form__user-contact label::after {
@@ -637,6 +644,11 @@
     padding-bottom: 0;
   }
 
+  .form__progress .form__name {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .form__progress-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -654,17 +666,15 @@
 
   .form__progress .form__block:nth-of-type(1) {
     order: 1;
-    //margin-right: 57px;
+    margin-left: -10px;
   }
 
   .form__progress .form__block:nth-of-type(3) {
     order: 2;
-    //margin-right: 55px;
   }
 
   .form__progress .form__block:nth-of-type(5) {
     order: 3;
-    //margin-right: 0;
   }
 
   .form__progress .form__block:nth-of-type(2) {
@@ -675,12 +685,11 @@
 
   .form__progress .form__block:nth-of-type(4) {
     order: 5;
-    //margin-right: 65px;
   }
 
   .form__progress .form__block:nth-of-type(6) {
     order: 6;
-    //margin-right: 0;
+    margin-left: 10px;
   }
 
   .form__post {

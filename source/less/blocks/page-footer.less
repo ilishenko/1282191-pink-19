@@ -14,6 +14,16 @@
   margin-bottom: 35px;
 }
 
+.page-footer__logo:hover[href]:not(:active) path,
+.page-footer__logo:focus[href]:not(:active) path {
+  fill: #d22856;
+  cursor: pointer;
+}
+
+.page-footer__logo:active[href] path {
+  opacity: 0.3;
+}
+
 .page-footer__logo-tablet {
   display: block;
 }
@@ -36,16 +46,6 @@
   .page-footer__logo {
     width: 150px;
     margin-right: 73px;
-
-    &:active[href] {
-      opacity: 0.3;
-    }
-  }
-
-  .page-footer__logo:hover[href] path,
-  .page-footer__logo:focus[href] path {
-    fill: #d22856;
-    cursor: pointer;
   }
 
   .page-footer__logo-tablet {
