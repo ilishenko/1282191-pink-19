@@ -153,7 +153,7 @@
     width: 690px;
     padding-top: 127px;
     margin-bottom: 36px;
-    background-image: url("../img/icon-quotes.svg");
+    background-image: url("../img/quotes.svg");
     background-repeat: no-repeat;
     background-position: 311px 14px;
   }
@@ -169,6 +169,10 @@
 
   .slider__toggle {
     display: none;
+
+    &::before {
+      display: none;
+    }
 
     &--left,
     &--right {

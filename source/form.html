@@ -3,14 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк, главная страница</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
+    <script src="js/svg4everybody.min.js" async></script>
+    <link rel="preload" href="/fonts/opensans.woff2" as="font">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
@@ -285,7 +290,6 @@
         <button class="popup__button popup__button--error button" type="button" name="button">Ок</button>
       </div>
     </section>
-  <script src="js/menu.js"></script>
-  <script src="js/popup.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
