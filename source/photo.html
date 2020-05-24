@@ -3,18 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк, главная страница</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
+    <script src="js/svg4everybody.min.js" async></script>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <svg style="display:none;">
+          <!--svg style="display:none;">
             <symbol id="page-header__logo-mobile"  viewBox="0 0 74.426 22.859">
               <g>
                 <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
@@ -62,12 +67,12 @@
                   <path fill="#D22856" d="M10.734,34.072c-1.519,0-2.749-1.23-2.749-2.75c0,1.52-1.23,2.75-2.749,2.75 c1.519,0,2.749,1.229,2.749,2.748C7.985,35.303,9.215,34.072,10.734,34.072z"/>
                 </g>
               </g>
-            </symbol>
+            </symbol-->
           </svg>
           <svg  width="74.426px" height="22.859px">
-            <use class="page-header__logo-mobile" xlink:href="#page-header__logo-mobile"></use>
-            <use class="page-header__logo-tablet" xlink:href="#page-header__logo-tablet"></use>
-            <use class="page-header__logo-desktop" xlink:href="#page-header__logo-desktop"></use>
+            <use class="page-header__logo-mobile" xlink:href="img/sprite.svg#icon-logo-pink-white-mobile"></use>
+            <use class="page-header__logo-tablet" xlink:href="img/sprite.svg#icon-logo-pink-white-tablet"></use>
+            <use class="page-header__logo-desktop" xlink:href="img/sprite.svg#icon-logo-pink-white-desktop"></use>
           </svg>
         </a>
         <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
@@ -107,6 +112,9 @@
           <h2 class="panorama__title">Панорама дня</h2>
           <a class="panorama__foto" href="img/panorama-desktop@2x.jpg">
             <picture>
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
               <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" width="320" height="137" alt="Фотография победителя">
@@ -130,6 +138,9 @@
           <li class="gallery__item">
             <a class="gallery__foto" href="img/photo-car-desktop@2x.jpg">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-table@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
                 <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография автомобиля. Добавил Левон">
@@ -151,6 +162,9 @@
           <li class="gallery__item">
             <a class="gallery__foto" href="img/photo-drumset-desktop@2x.jpg">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-table@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
                 <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография барабанов. Добавил Антон">
@@ -172,6 +186,9 @@
           <li class="gallery__item">
             <a class="gallery__foto" href="img/photo-window-desktop@2x.jpg">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
                 <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография стеклянного хола. Добавил Борис">
@@ -193,6 +210,9 @@
           <li class="gallery__item">
             <a class="gallery__foto" href="img/photo-fair-desktop@2x.jpg">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
                 <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография Кубанской бахчи. Добавил Сергей">
@@ -214,6 +234,9 @@
           <li class="gallery__item">
             <a class="gallery__foto" href="img/photo-pov-desktop@2x.jpg">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
                 <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография гор летом. Добавил Максим">
@@ -235,6 +258,9 @@
           <li class="gallery__item">
             <a class="gallery__foto" href="img/photo-wing-desktop@2x.jpg">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
                 <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография рассвета через эллюминатор самолёта. Добавила Надежда">
@@ -263,6 +289,9 @@
           <div class="post-form__wrapper container">
             <div class="post-form__upload">
               <picture>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
                 <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
                 <img class="post-form__setup-user-pic" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Новая фотографии">
@@ -273,29 +302,11 @@
 
             <div class="post-form__setings-wrapper">
               <div class="post-form__setings">
-                <svg style="display: none;">
-                  <symbol id="crop" viewBox="0 0 44 44">
-                    <path fill="none" d="M0,0h48v48H0V0z"/>
-                    <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
-                  </symbol>
-
-                  <symbol id="fill" viewBox="0 0 48 43">
-                    <path fill="none" d="M0,0h48v48H0V0z"/>
-                    <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
-                    <rect y="40" width="48" height="3"/>
-                  </symbol>
-
-                  <symbol id="contrast" viewBox="-35.422 -7.96 32 32">
-                    <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
-                    <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
-                  </symbol>
-                </svg>
-
                 <div class="post-form__block post-form__block--crop post-form__block--active">
                   <button class="post-form__button post-form__button--crop" type="button" name="button">
                     <span class="visually-hidden">обрезать фото</span>
                     <svg width="48px" height="44px">
-                      <use class="post-form__svg-active" xlink:href="#crop"></use>
+                      <use class="post-form__svg-active" xlink:href="img/sprite.svg#icon-editor-crop"></use>
                     </svg>
                   </button>
                   <div class="post-form__range-controls">
@@ -308,7 +319,7 @@
                   <button class="post-form__button post-form__button--fill" type="button" name="button">
                     <span class="visually-hidden">контрастность</span>
                     <svg width="48px" height="44px">
-                      <use class="post-form__svg-active" xlink:href="#fill"></use>
+                      <use class="post-form__svg-active" xlink:href="img/sprite.svg#icon-editor-fill"></use>
                     </svg>
                   </button>
                   <div class="post-form__range-controls">
@@ -321,7 +332,7 @@
                   <button class="post-form__button post-form__button--contrast" type="button" name="button">
                     <span class="visually-hidden">яркость</span>
                     <svg width="32px" height="32px">
-                      <use class="post-form__svg-active" xlink:href="#contrast"></use>
+                      <use class="post-form__svg-active" xlink:href="img/sprite.svg#icon-editor-contrast"></use>
                     </svg>
                   </button>
                   <div class="post-form__range-controls">
@@ -342,7 +353,7 @@
     <footer class="page-footer page-footer--active">
       <div class="page-footer__wrapper container">
         <a class="page-footer__logo" href="index.html">
-          <svg style="display: none;">
+          <!--svg style="display: none;">
             <symbol id="logo-tablet" viewBox="0 0 146.3 40.375">
               <g class="page-footer__logo-pink">
                 <path d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.064 c0,4.861-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.288-1.288,1.288c-0.676,0-1.256-0.58-1.256-1.288V18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.063c0-3.22-2.414-4.894-6.053-4.894h-5.699v9.917H79.988L79.988,29.641z"/>
@@ -382,10 +393,10 @@
                 </g>
               </g>
             </symbol>
-          </svg>
+          </svg-->
           <svg width="148px" height="40px">
-            <use class="page-footer__logo-tablet" xlink:href="#logo-tablet"></use>
-            <use class="page-footer__logo-desktop" xlink:href="#logo-desktop"></use>
+            <use class="page-footer__logo-tablet" xlink:href="img/sprite.svg#icon-logo-pink-blue-mobile"></use>
+            <use class="page-footer__logo-desktop" xlink:href="img/sprite.svg#icon-logo-pink-blue-desktop"></use>
           </svg>
         </a>
         <ul class="page-footer__social social">
@@ -402,14 +413,13 @@
         <div class="page-footer__copyright copyright">
           <p class="copyright__paragraf">Разработано</p>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg width="40px" height="48px" viewBox="0 0 60 60" fill="#2E368F">
-                <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+              <svg width="40px" height="48px" viewBox="0 0 60 60">
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
           </a>
         </div>
       </div>
     </footer>
-  <script src="js/menu.js"></script>
-  <script src="js/setings-foto.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
