@@ -34,11 +34,12 @@
   fill: #ffffff;
 }
 
-.page-header__logo:hover svg {
+.page-header__logo:hover[href] svg,
+.page-header__logo:focus[href] svg {
   fill: #d22856;
 }
 
-.page-header__logo:active svg {
+.page-header__logo:active[href] svg {
   fill: #ffffff;
   opacity: 0.3;
 }
