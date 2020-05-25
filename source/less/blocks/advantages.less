@@ -1,7 +1,7 @@
 
 .advantages {
   margin-bottom: 41px;
-  padding-top: 43px;
+  padding-top: 40px;
   padding-bottom: 285px;
   background-image: linear-gradient(174deg, #ffffff, #ffffff 249px, #f2f2f2 249px, #f2f2f2);
 }
@@ -11,9 +11,9 @@
 }
 
 .advantages__paragraph {
-  font-family: "Open Sans", "Arial", sans-serif;
   font-weight: 300;
   font-size: 24px;
+  line-height: 28px;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
@@ -79,10 +79,10 @@
 
 @media (min-width: 660px) {
   .advantages {
-    margin-top: 7px;
+    margin-top: 20px;
     margin-bottom: 95px;
     padding-bottom: 0;
-    background-image: linear-gradient(175.5deg, #ffffff, #ffffff 288px, #f2f2f2 288px, #f2f2f2);
+    background-image: linear-gradient(175.5deg, #ffffff, #ffffff 274px, #f2f2f2 274px, #f2f2f2);
   }
 
   .advantages__wrapper {
@@ -95,6 +95,7 @@
 
     &:nth-of-type(1) {
       padding: 0;
+      margin-bottom: 10px;
       width: 620px;
     }
   }
@@ -120,10 +121,12 @@
     padding: 0;
   }
 
-  .advantages__paragraph:nth-of-type(2) {
+  .advantages__paragraph {
+    &:nth-of-type(2) {
     width: 380px;
     margin: 0 auto;
     line-height: 47px;
+    }
   }
 
   .advantages__description br {
@@ -161,6 +164,7 @@
       text-align: center;
       padding-right: 0;
       padding-left: 0;
+      margin-bottom: 2px;
     }
 
     &:nth-of-type(2) {
