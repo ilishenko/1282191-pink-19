@@ -1,22 +1,27 @@
 .panorama {
-  position: relative;
   margin-bottom: 20px;
 }
 
 .panorama__title {
-  position: absolute;
-  margin: 0;
-  top: 0;
-  right: 20px;
-  width: 140px;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 12px;
-  background-color: #d22856;
-  color: #ffffff;
-  text-align: center;
-  padding-top: 11px;
-  padding-bottom: 12px;
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+
+  & h2 {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    right: 0;
+    width: 140px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #d22856;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 12px;
+  }
 }
 
 .panorama__photo {
@@ -117,7 +122,11 @@
   }
 
   .panorama__title {
-    top: 57px;
+    width: 620px;
+
+    & h2 {
+      top: 57px;
+    }
   }
 
   .panorama__photo img {
@@ -166,8 +175,11 @@
   }
 
   .panorama__title {
-    top: 53px;
-    right: 10px;
+    width: 940px;
+
+    & h2 {
+      top: 53px;
+    }
   }
 
   .panorama__photo img {
