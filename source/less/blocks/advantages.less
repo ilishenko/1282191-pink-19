@@ -26,30 +26,30 @@
   .reset_ul();
   width: 283px;
   margin: 0 auto;
-  margin-top: 118px;
+  margin-top: 115px;
 }
 
 .advantages__item {
   margin-bottom: 32px;
-}
 
-.advantages__item:last-child {
-  position: relative;
+  &:last-child {
+    position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -317px;
-    left: 62px;
-    width: 157px;
-    height: 300px;
-    background-image: url("../img/iphone-screen-mobile@1x.png");
-    background-repeat: no-repeat;
-    background-position: 50% -105%;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -317px;
+      left: 62px;
+      width: 157px;
+      height: 300px;
+      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-repeat: no-repeat;
+      background-position: 50% -105%;
 
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-screen-mobile@2x.png");
-      background-size: cover;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-screen-mobile@2x.png");
+        background-size: cover;
+      }
     }
   }
 }
@@ -115,6 +115,23 @@
 
   .advantages__item {
     margin-bottom: 35px;
+
+    &:last-child {
+      &::before {
+      top: -360px;
+      left: -310px;
+      width: 270px;
+      height: 486px;
+      background-image: url("../img/iphone-screen-mobile@1x.png");
+      background-size: 267px auto;
+      background-repeat: no-repeat;
+      background-position: 50% -6%;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/iphone-screen-mobile@2x.png");
+      }
+      }
+    }
   }
 
   .advantages__title {
@@ -129,21 +146,6 @@
 
   .advantages__description br {
     display: block;
-  }
-
-  .advantages__item:last-child::before {
-    top: -360px;
-    left: -310px;
-    width: 270px;
-    height: 486px;
-    background-image: url("../img/iphone-screen-mobile@1x.png");
-    background-size: 267px auto;
-    background-repeat: no-repeat;
-    background-position: 50% -6%;
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/iphone-screen-mobile@2x.png");
-    }
   }
 }
 
@@ -192,7 +194,8 @@
       margin-right: 0;
     }
 
-    &:nth-of-type(1)::before {
+    &:nth-of-type(1) {
+      &::before {
       content: "";
       position: absolute;
       top: -368px;
@@ -207,79 +210,90 @@
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/iphone-screen-1-desktop@2x.png");
       }
+      }
     }
 
-    &:nth-of-type(2)::before {
-      content: "";
-      position: absolute;
-      top: -368px;
-      left: 29px;
-      width: 188px;
-      height: 382px;
-      background-image: url("../img/iphone-screen-2-desktop@1x.png");
-      background-size: 291px auto;
-      background-repeat: no-repeat;
-      background-position: 47% 50%;
+    &:nth-of-type(2) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -368px;
+        left: 29px;
+        width: 188px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-2-desktop@1x.png");
+        background-size: 291px auto;
+        background-repeat: no-repeat;
+        background-position: 47% 50%;
 
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         background-image: url("../img/iphone-screen-2-desktop@2x.png");
+        }
       }
     }
 
-    &:nth-of-type(3)::before {
-      content: "";
-      position: absolute;
-      top: -368px;
-      left: 29px;
-      width: 188px;
-      height: 382px;
-      background-image: url("../img/iphone-screen-3-desktop@1x.png");
-      background-size: 291px auto;
-      background-repeat: no-repeat;
-      background-position: 47% 50%;
+    &:nth-of-type(3) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: -368px;
+        left: 29px;
+        width: 188px;
+        height: 382px;
+        background-image: url("../img/iphone-screen-3-desktop@1x.png");
+        background-size: 291px auto;
+        background-repeat: no-repeat;
+        background-position: 47% 50%;
 
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../img/iphone-screen-3-desktop@2x.png");
+        @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+          background-image: url("../img/iphone-screen-3-desktop@2x.png");
+        }
       }
     }
 
-    &:nth-of-type(1)::after {
-      content: "";
-      position: absolute;
-      top: -36px;
-      left: -30px;
-      width: 300px;
-      height: 9px;
-      background-image: url("../img/shadow.png");
-      background-size: 300px 17px;
-      background-repeat: no-repeat;
-      background-position: 50% 1px;
+    &:nth-of-type(1) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -36px;
+        left: -30px;
+        width: 300px;
+        height: 9px;
+        background-image: url("../img/shadow.png");
+        background-size: 300px 17px;
+        background-repeat: no-repeat;
+        background-position: 50% 1px;
+      }
     }
 
-    &:nth-of-type(2)::after {
-      content: "";
-      position: absolute;
-      top: -35px;
-      left: -30px;
-      width: 300px;
-      height: 9px;
-      background-image: url("../img/shadow.png");
-      background-size: 300px 17px;
-      background-repeat: no-repeat;
-      background-position: 50% 1px;
+    &:nth-of-type(2) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -35px;
+        left: -30px;
+        width: 300px;
+        height: 9px;
+        background-image: url("../img/shadow.png");
+        background-size: 300px 17px;
+        background-repeat: no-repeat;
+        background-position: 50% 1px;
+      }
     }
 
-    &:nth-of-type(3)::after {
-      content: "";
-      position: absolute;
-      top: -35px;
-      left: -30px;
-      width: 300px;
-      height: 9px;
-      background-image: url("../img/shadow.png");
-      background-size: 300px 17px;
-      background-repeat: no-repeat;
-      background-position: 50% 1px;
+    &:nth-of-type(3) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -35px;
+        left: -30px;
+        width: 300px;
+        height: 9px;
+        background-image: url("../img/shadow.png");
+        background-size: 300px 17px;
+        background-repeat: no-repeat;
+        background-position: 50% 1px;
+      }
     }
   }
 
