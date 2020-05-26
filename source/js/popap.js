@@ -8,7 +8,7 @@ var form = popup.querySelector('form');
 var email = popup.querySelector('[name=email]');
 
 var isStorageSupport = true;
-var storage = "";
+var storage = '';
 
 try {
   storage = localStorage.getItem('login');

@@ -448,16 +448,20 @@
     }
   }
 
-  .form__user-contact label[for="tel"]::after {
-    background-image: url("../img/phone.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  .form__user-contact label[for="tel"] {
+    &::after {
+      background-image: url("../img/phone.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
   }
 
-  .form__user-contact label[for="email"]::after {
-    background-image: url("../img/mail.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+  .form__user-contact label[for="email"] {
+    &::after {
+      background-image: url("../img/mail.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
   }
 
 
@@ -588,10 +592,10 @@
   .form__personal .form__block {
     width: 436px;
     margin-top: 12px;
-  }
 
-  .form__personal .form__block:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .form__app {
@@ -619,8 +623,10 @@
     margin-right: auto;
   }
 
-  .form__user-contact label::after {
-    right: 2px;
+  .form__user-contact label {
+    &::after {
+      right: 2px;
+    }
   }
 
   .form__user-contact .form__blocks {
@@ -665,32 +671,34 @@
     padding-left: 59px;
   }
 
-  .form__progress .form__block:nth-of-type(1) {
-    order: 1;
-    margin-left: -10px;
-  }
+  .form__progress .form__block {
+    &:nth-of-type(1) {
+      order: 1;
+      margin-left: -10px;
+    }
 
-  .form__progress .form__block:nth-of-type(3) {
-    order: 2;
-  }
+    &:nth-of-type(3) {
+      order: 2;
+    }
 
-  .form__progress .form__block:nth-of-type(5) {
-    order: 3;
-  }
+    &:nth-of-type(5) {
+      order: 3;
+    }
 
-  .form__progress .form__block:nth-of-type(2) {
-    order: 4;
-    margin-right: 40px;
-    margin-left: -10px;
-  }
+    &:nth-of-type(2) {
+      order: 4;
+      margin-right: 40px;
+      margin-left: -10px;
+    }
 
-  .form__progress .form__block:nth-of-type(4) {
-    order: 5;
-  }
+    &:nth-of-type(4) {
+      order: 5;
+    }
 
-  .form__progress .form__block:nth-of-type(6) {
-    order: 6;
-    margin-left: 10px;
+    &:nth-of-type(6) {
+      order: 6;
+      margin-left: 10px;
+    }
   }
 
   .form__post {

@@ -63,16 +63,16 @@
   font-weight: 300;
   text-decoration: none;
   color: #d22856;
-}
 
-.contacts__item:hover[href],
-.contacts__item:focus[href] {
-  color: #283645;
-  text-decoration: underline;
-}
+  &:hover[href],
+  &:focus[href] {
+    color: #283645;
+    text-decoration: underline;
+  }
 
-.contacts__item:active[href] {
-  opacity: 0.3;
+  &:active[href] {
+    opacity: 0.3;
+  }
 }
 
 .contacts__street {
@@ -85,6 +85,12 @@
       height: 69px;
       background-size: 50% 69px, 50% 69px;
     }
+  }
+
+  .contacts__wrapper {
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contacts__manifest {
@@ -117,6 +123,10 @@
       height: 101px;
       background-size: 50% 101px, 50% 101px;
     }
+  }
+
+  .contacts__wrapper {
+    width: 960px;
   }
 
   .contacts__manifest {
